@@ -1,0 +1,4 @@
+# Each app (rsm/, tlween/, …) is its own git repository; this repo is only the shibshib.art site.
+/*/
+!/logos/
+.DS_Store

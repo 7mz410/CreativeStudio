@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شبشب · ShibShib</title>
+  <meta name="description" content="شبشب: حزمة برامج تصميم مجانية ومفتوحة المصدر بالعربي والإنجليزي. ShibShib: a free, open-source creative suite in Arabic and English.">
+  <meta property="og:title" content="شبشب · ShibShib">
+  <meta property="og:description" content="حزمة برامج تصميم مجانية ومفتوحة المصدر · A free, open-source creative suite">
+  <link rel="icon" type="image/svg+xml" href="logos/main_logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #111;
+      --paper: #faf8f4;
+      --card: #fff;
+      --line: #e6e1d8;
+      --muted: #6b665e;
+      --accent: #e04a2f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "IBM Plex Sans Arabic", "IBM Plex Sans", system-ui, sans-serif;
+      line-height: 1.6;
+    }
+    .en { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    a { color: inherit; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+
+    header { padding: 56px 0 40px; text-align: center; }
+    header img { width: 120px; height: auto; }
+    h1 { font-size: clamp(32px, 6vw, 52px); margin: 18px 0 6px; font-weight: 700; }
+    .tagline { font-size: clamp(17px, 2.4vw, 21px); margin: 0; }
+    .tagline.en { color: var(--muted); font-size: 16px; direction: ltr; }
+    .pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+    .pill { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 6px 14px; font-size: 14px; }
+
+    h2 { font-size: 22px; margin: 0 0 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+    .app {
+      position: relative;
+      display: flex; flex-direction: column; align-items: center; text-align: center;
+      background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+      padding: 22px 16px 18px; text-decoration: none; min-height: 270px;
+      transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+    }
+    a.app:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,.08); border-color: #cfc8bb; }
+    .app img { height: 140px; width: auto; max-width: 100%; object-fit: contain; }
+    .app .mark { height: 140px; display: grid; place-items: center; font-size: 56px; font-weight: 700; color: #d8d2c6; }
+    .app .name { font-weight: 700; font-size: 18px; margin-top: 12px; }
+    .app .what { font-size: 14px; color: var(--muted); }
+    .app .what .en { direction: ltr; display: inline-block; }
+    .badge {
+      position: absolute; top: 12px; inset-inline-start: 12px;
+      font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px;
+      background: #f0ece4; color: var(--muted);
+    }
+    .badge.live { background: var(--accent); color: #fff; }
+
+    section { padding: 24px 0 40px; }
+    .about { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .about div { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 20px; }
+    .about h3 { margin: 0 0 6px; font-size: 17px; }
+    .about p { margin: 0; color: var(--muted); font-size: 15px; }
+
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+    footer p { margin: 4px 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logos/main_logo.svg" alt="شبشب ShibShib">
+      <h1>شبشب</h1>
+      <p class="tagline">حزمة برامج تصميم مجانية ومفتوحة المصدر، بالعربي والإنجليزي.</p>
+      <p class="tagline en">A free, open-source creative suite, in Arabic and English.</p>
+      <div class="pills">
+        <span class="pill">مجاني للجميع</span>
+        <span class="pill">مفتوح المصدر</span>
+        <span class="pill">واجهة عربية كاملة</span>
+        <span class="pill">Mac · Windows · Linux · Web</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>البرامج</h2>
+      <div class="grid">
+        <a class="app" href="https://rsm.shibshib.art/">
+          <span class="badge live">جرّبه الآن</span>
+          <img src="logos/rsm.svg" alt="">
+          <span class="name">شبشب رسم</span>
+          <span class="what">رسم متجهي<br><span class="en">Vector illustration</span></span>
+        </a>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <img src="logos/7rrek.svg" alt="">
+          <span class="name">شبشب حرّك</span>
+          <span class="what">رسوم متحركة<br><span class="en">Animation</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <img src="logos/tlween.svg" alt="">
+          <span class="name">شبشب تلوين</span>
+          <span class="what">تعديل الصور<br><span class="en">Image editing</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <img src="logos/trteeb.svg" alt="">
+          <span class="name">شبشب ترتيب</span>
+          <span class="what">تنسيق الصفحات<br><span class="en">Page layout</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <img src="logos/tsweer.svg" alt="">
+          <span class="name">شبشب تصوير</span>
+          <span class="what">مونتاج الفيديو<br><span class="en">Video editing</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <img src="logos/effectat.svg" alt="">
+          <span class="name">شبشب تأثيرات</span>
+          <span class="what">موشن جرافيك<br><span class="en">Motion graphics</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <img src="logos/sharek.svg" alt="">
+          <span class="name">شبشب شارك</span>
+          <span class="what">تصميم جماعي<br><span class="en">Collaborative design</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <span class="mark">تحشات</span>
+          <span class="name">شبشب تحشات</span>
+          <span class="what">تحرير الصور الخام<br><span class="en">Photo library &amp; RAW</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <span class="mark">مزيكا</span>
+          <span class="name">شبشب مزيكا</span>
+          <span class="what">إنتاج موسيقى<br><span class="en">Music production</span></span>
+        </div>
+        <div class="app">
+          <span class="badge">قريباً</span>
+          <span class="mark">أصوات</span>
+          <span class="name">شبشب أصوات</span>
+          <span class="what">تحرير الصوت<br><span class="en">Audio editing</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>ليش شبشب؟</h2>
+      <div class="about">
+        <div>
+          <h3>بالعربي من الأساس</h3>
+          <p>واجهة عربية كاملة، ونص عربي متصل الحروف بالاتجاه الصحيح، ومصطلحات يعرفها المصممون.</p>
+        </div>
+        <div>
+          <h3>مجاني ومفتوح</h3>
+          <p>كل البرامج مفتوحة المصدر، تحت رخص تسمح لأي شخص باستعمالها وتعديلها ومشاركتها.</p>
+        </div>
+        <div>
+          <h3>مبني على أكتاف عمالقة</h3>
+          <p>شبشب رسم مبني على <a href="https://github.com/storytold/vectorcraft">VectorCraft</a> من فريق <a href="https://getartcraft.com/">ArtCraft</a>. نشكرهم على عملهم المفتوح.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>شبشب مشروع مستقل مفتوح المصدر. <a href="https://github.com/7mz410">GitHub</a></p>
+      <p class="en" dir="ltr">ShibShib is an independent open-source project, not affiliated with Adobe Inc. or the ArtCraft team.</p>
+    </footer>
+  </div>
+</body>
+</html>
