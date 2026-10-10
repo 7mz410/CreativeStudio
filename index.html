@@ -36,7 +36,6 @@
     header img { width: 120px; height: auto; }
     h1 { font-size: clamp(32px, 6vw, 52px); margin: 18px 0 6px; font-weight: 700; }
     .tagline { font-size: clamp(17px, 2.4vw, 21px); margin: 0; }
-    .tagline.en { color: var(--muted); font-size: 16px; direction: ltr; }
     .pills { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
     .pill { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 6px 14px; font-size: 14px; }
 
@@ -71,114 +70,140 @@
 
     footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
     footer p { margin: 4px 0; }
+    .lang { position: absolute; top: 16px; inset-inline-end: 20px; border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 14px; cursor: pointer; color: var(--ink); }
+    .lang:hover { border-color: var(--ink); }
+    html[lang="en"] body { font-family: "IBM Plex Sans", system-ui, sans-serif; }
   </style>
 </head>
 <body>
+  <button class="lang" id="lang" type="button" lang="en">English</button>
   <div class="wrap">
     <header>
-      <img src="logos/shibshib_main.svg" alt="شبشب ShibShib">
-      <h1>شبشب</h1>
-      <p class="tagline">حزمة برامج تصميم مجانية ومفتوحة المصدر، بالعربي والإنجليزي.</p>
-      <p class="tagline en">A free, open-source creative suite, in Arabic and English.</p>
+      <img src="logos/shibshib_main.svg" alt="ShibShib">
+      <h1 data-en="ShibShib">شبشب</h1>
+      <p class="tagline" data-en="A free, open-source creative suite, in Arabic and English.">حزمة برامج تصميم مجانية ومفتوحة المصدر، بالعربي والإنجليزي.</p>
       <div class="pills">
-        <span class="pill">مجاني للجميع</span>
-        <span class="pill">مفتوح المصدر</span>
-        <span class="pill">واجهة عربية كاملة</span>
+        <span class="pill" data-en="Free for everyone">مجاني للجميع</span>
+        <span class="pill" data-en="Open source">مفتوح المصدر</span>
+        <span class="pill" data-en="Full Arabic interface">واجهة عربية كاملة</span>
         <span class="pill">Mac · Windows · Linux · Web</span>
       </div>
     </header>
 
     <section>
-      <h2>البرامج</h2>
+      <h2 data-en="The apps">البرامج</h2>
       <div class="grid">
         <a class="app" href="https://rsm.shibshib.art/">
-          <span class="badge live">جرّبه الآن</span>
+          <span class="badge live" data-en="Try it now">جرّبه الآن</span>
           <img src="logos/rsm.svg" alt="">
-          <span class="name">شبشب رسم</span>
-          <span class="what">رسم متجهي<br><span class="en">Vector illustration</span></span>
+          <span class="name" data-en="ShibShib rsm">شبشب رسم</span>
+          <span class="what" data-en="Vector illustration">رسم متجهي</span>
         </a>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/7rrek.svg" alt="">
-          <span class="name">شبشب حرّك</span>
-          <span class="what">رسوم متحركة<br><span class="en">Animation</span></span>
+          <span class="name" data-en="ShibShib 7rrek">شبشب حرّك</span>
+          <span class="what" data-en="Animation">رسوم متحركة</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/tlween.svg" alt="">
-          <span class="name">شبشب تلوين</span>
-          <span class="what">تعديل الصور<br><span class="en">Image editing</span></span>
+          <span class="name" data-en="ShibShib tlween">شبشب تلوين</span>
+          <span class="what" data-en="Image editing">تعديل الصور</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/trteeb.svg" alt="">
-          <span class="name">شبشب ترتيب</span>
-          <span class="what">تنسيق الصفحات<br><span class="en">Page layout</span></span>
+          <span class="name" data-en="ShibShib trteeb">شبشب ترتيب</span>
+          <span class="what" data-en="Page layout">تنسيق الصفحات</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/tsweer.svg" alt="">
-          <span class="name">شبشب تصوير</span>
-          <span class="what">مونتاج الفيديو<br><span class="en">Video editing</span></span>
+          <span class="name" data-en="ShibShib tsweer">شبشب تصوير</span>
+          <span class="what" data-en="Video editing">مونتاج الفيديو</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/effectat.svg" alt="">
-          <span class="name">شبشب تأثيرات</span>
-          <span class="what">موشن جرافيك<br><span class="en">Motion graphics</span></span>
+          <span class="name" data-en="ShibShib effectat">شبشب تأثيرات</span>
+          <span class="what" data-en="Motion graphics">موشن جرافيك</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/sharek.svg" alt="">
-          <span class="name">شبشب شارك</span>
-          <span class="what">تصميم جماعي<br><span class="en">Collaborative design</span></span>
+          <span class="name" data-en="ShibShib sharek">شبشب شارك</span>
+          <span class="what" data-en="Collaborative design">تصميم جماعي</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/ttshat.svg" alt="">
-          <span class="name">شبشب تتشات</span>
-          <span class="what">تحرير الصور الخام<br><span class="en">Photo library &amp; RAW</span></span>
+          <span class="name" data-en="ShibShib ttshat">شبشب تتشات</span>
+          <span class="what" data-en="Photo library &amp; RAW">تحرير الصور الخام</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/mzika.svg" alt="">
-          <span class="name">شبشب مزيكا</span>
-          <span class="what">إنتاج موسيقى<br><span class="en">Music production</span></span>
+          <span class="name" data-en="ShibShib mzika">شبشب مزيكا</span>
+          <span class="what" data-en="Music production">إنتاج موسيقى</span>
         </div>
         <div class="app">
-          <span class="badge">قريباً</span>
+          <span class="badge" data-en="Coming soon">قريباً</span>
           <img src="logos/aswat.svg" alt="">
-          <span class="name">شبشب أصوات</span>
-          <span class="what">تحرير الصوت<br><span class="en">Audio editing</span></span>
+          <span class="name" data-en="ShibShib aswat">شبشب أصوات</span>
+          <span class="what" data-en="Audio editing">تحرير الصوت</span>
         </div>
       </div>
     </section>
 
     <section>
-      <h2>ليش شبشب؟</h2>
+      <h2 data-en="Why ShibShib?">ليش شبشب؟</h2>
       <div class="about">
         <div class="lead">
-          <p>الشبشب هو أبسط شي ممكن تلبسه برجلك عشان يوصّلك لهدفك.</p>
+          <p data-en="A flip-flop is the simplest thing you can slip on to get you where you're going.">الشبشب هو أبسط شي ممكن تلبسه برجلك عشان يوصّلك لهدفك.</p>
         </div>
         <div>
-          <h3>بالعربي من الأساس</h3>
-          <p>واجهة عربية كاملة، ونص عربي متصل الحروف بالاتجاه الصحيح، ومصطلحات يعرفها المصممون.</p>
+          <h3 data-en="Arabic from the ground up">بالعربي من الأساس</h3>
+          <p data-en="A complete Arabic interface, Arabic text with joined letters in the right direction, and the terms designers know.">واجهة عربية كاملة، ونص عربي متصل الحروف بالاتجاه الصحيح، ومصطلحات يعرفها المصممون.</p>
         </div>
         <div>
-          <h3>مجاني ومفتوح</h3>
-          <p>كل البرامج مفتوحة المصدر، تحت رخص تسمح لأي شخص باستعمالها وتعديلها ومشاركتها.</p>
+          <h3 data-en="Free and open">مجاني ومفتوح</h3>
+          <p data-en="Every app is open source, under licences that let anyone use, change and share it.">كل البرامج مفتوحة المصدر، تحت رخص تسمح لأي شخص باستعمالها وتعديلها ومشاركتها.</p>
         </div>
         <div>
-          <h3>مبني على أكتاف عمالقة</h3>
-          <p>شبشب رسم مبني على <a href="https://github.com/storytold/vectorcraft">VectorCraft</a> من فريق <a href="https://getartcraft.com/">ArtCraft</a>. نشكرهم على عملهم المفتوح.</p>
+          <h3 data-en="Standing on the shoulders of giants">مبني على أكتاف عمالقة</h3>
+          <p data-en='ShibShib rsm is built on &lt;a href="https://github.com/storytold/vectorcraft"&gt;VectorCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/"&gt;ArtCraft&lt;/a&gt; team. Thank you for your open work.'>شبشب رسم مبني على <a href="https://github.com/storytold/vectorcraft">VectorCraft</a> من فريق <a href="https://getartcraft.com/">ArtCraft</a>. نشكرهم على عملهم المفتوح.</p>
         </div>
       </div>
     </section>
 
     <footer>
-      <p>شبشب مشروع مستقل مفتوح المصدر. <a href="https://github.com/7mz410">GitHub</a></p>
-      <p class="en" dir="ltr">ShibShib is an independent open-source project, not affiliated with Adobe Inc. or the ArtCraft team.</p>
+      <p data-en='ShibShib is an independent open-source project. &lt;a href="https://github.com/7mz410"&gt;GitHub&lt;/a&gt;'>شبشب مشروع مستقل مفتوح المصدر. <a href="https://github.com/7mz410">GitHub</a></p>
+      <p data-en="Not affiliated with Adobe Inc. or the ArtCraft team.">غير تابع لشركة Adobe ولا لفريق ArtCraft.</p>
     </footer>
   </div>
+  <script>
+    (function () {
+      var els = document.querySelectorAll('[data-en]');
+      els.forEach(function (el) { el.dataset.ar = el.innerHTML; });
+      var btn = document.getElementById('lang');
+      function set(lang) {
+        var en = lang === 'en';
+        document.documentElement.lang = lang;
+        document.documentElement.dir = en ? 'ltr' : 'rtl';
+        document.title = en ? 'ShibShib' : 'شبشب · ShibShib';
+        els.forEach(function (el) { el.innerHTML = en ? el.dataset.en : el.dataset.ar; });
+        btn.textContent = en ? 'العربية' : 'English';
+        btn.lang = en ? 'ar' : 'en';
+        try { localStorage.setItem('lang', lang); } catch (e) {}
+      }
+      var saved = null;
+      try { saved = localStorage.getItem('lang'); } catch (e) {}
+      var start = new URLSearchParams(location.search).get('lang') || saved ||
+        (/^ar/i.test(navigator.language || '') ? 'ar' : 'en');
+      if (start === 'en') set('en');
+      btn.addEventListener('click', function () { set(document.documentElement.lang === 'en' ? 'ar' : 'en'); });
+    })();
+  </script>
 </body>
 </html>
