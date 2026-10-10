@@ -72,3 +72,9 @@
     .doc p, .doc li { color: #2b2925; }
     .doc ul { padding-inline-start: 22px; }
     .back { display: inline-block; margin-bottom: 24px; color: var(--muted); text-decoration: none; }
+    .app[style*="--c"] { background: var(--c); border-color: var(--c); }
+    .app[style*="--c"] .what { color: rgba(0,0,0,.7); }
+    .app.on-dark .name { color: #fff; }
+    .app.on-dark .what { color: rgba(255,255,255,.82); }
+    .app[style*="--c"] .badge { background: rgba(255,255,255,.85); color: #111; }
+    .app[style*="--c"] .badge.live { background: #111; color: #fff; }
