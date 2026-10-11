@@ -28,7 +28,7 @@
 | 7rrek (حرّك) | Animate/Flash | **نبنيه فوق rsm**: timeline، tweens، frame by frame | بعد rsm مباشرة |
 | sharek (شارك) | Figma | Penpot على الأغلب، ويحتاج سيرفر | لاحقاً |
 | ttshat (تتشات) | Lightroom | LightCraft (من نفس عائلة ArtCraft) | سهل، بعد 7rrek |
-| mzika (مزيكا) | FL Studio | LMMS (GPL) | لاحقاً: مقامات بربع تون، آلات وإيقاعات شرقية |
+| mzika (مزيكا) | FL Studio | soundcraft (Apache/MIT) + step sequencer وpatterns من عنا | لاحقاً: مقامات بربع تون، آلات وإيقاعات شرقية |
 | sf7aat (صفحات) | Acrobat | PdfCraft | لاحقاً: بعد effectat |
 | aswat (أصوات) | Audition | Audacity/Tenacity (GPL) أو SoundCraft، يحتاج فحصاً | لاحقاً: تحويل الكلام العربي لنص |
 
@@ -134,7 +134,7 @@
    - **sf7aat (صفحات) (2026-10-10):** fork من PdfCraft (https://github.com/7mz410/ShibShib-sf7aat، محلياً `~/Documents/ShibShib/sf7aat`). تم: الهوية والأيقونة، شعار sf7aat مكان شعار وعلامة ArtCraft، روابط Help والشاشة الرئيسية، فحص التحديثات صار يسأل ريبونا. الأصول هون مسجّلة بـ `ATTRIBUTION.toml` مع sha256 لكل ملف (بعد `rebrand.py` لازم نحدّث الـ hashes ونشغّل `cargo xtask assets --write`). الاختبارات كلها تمر. الويب: https://sf7aat.shibshib.art. العربي مع جولة الترجمة الأسبوع الجاي.
    - **ملاحظة لكل rebrand.py:** قاعدة الاستبدال بنص فاضي لازم تتطبّق كل مرة (`if not b or b not in out`)، انصلحت بالثلاثة.
    - **الدومينات:** حمزة عمل subdomain لكل برنامج (CNAME إلى 7mz410.github.io). كل برنامج بنرفع نسخة الويب تبعه على فرع `gh-pages` بريبوه مع ملف CNAME.
-5. **برامج من عيلة ثانية** (C++/Qt، GPL): mzika (LMMS) ← aswat (Audacity/Tenacity) ← sharek (Penpot، يحتاج سيرفر).
+5. **sharek** (Penpot، Docker على VPS بـ Hetzner، `sharek.studio.creative.ps`). mzika وaswat صاروا من soundcraft (§ آخر الملف).
 6. **7rrek:** يُبنى فوق rsm (timeline، keyframes، onion skin، tweens، تصدير فيديو/GIF/Lottie).
 7. **MCP موحّد للسويت** (`shibshib mcp`) يعرف كل البرامج المفتوحة.
 8. **مرحلة الإضافات العربية:** الخطّاط في rsm (§4.5)، مقامات بربع تون في mzika، تحويل الكلام العربي لنص في aswat…
@@ -219,4 +219,8 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 
 - 2026-10-11 قرارات حمزة: الأولوية نكبّر السويت. mzika وaswat بيستنّوا. ما في موعد إطلاق. الترتيب الجاي: trteeb (DesignCraft صار public، v0.6.0، MIT/Apache، فيه ويب) ← MCP موحّد ← 7rrek. sf7aat: انشال زر Discord (الشاشة الرئيسية والشريط العلوي).
 
-- 2026-10-11: storytold نزّلوا craft-launcher وsoundcraft وwordcraft وgridcraft وdeckcraft وcadcraft (كلها Apache-2.0، Rust). قرار حمزة: **aswat صار fork من soundcraft** (بدل Audacity). الترتيب: trteeb ← launcher باسم شبشب (يثبّت ويحدّث كل البرامج) ← aswat (soundcraft) ← MCP موحّد ← 7rrek. برامج المكتب (word/grid/deck) وcadcraft: لاحقاً، حمزة بيعمل أسماء وهويات. mzika لسا LMMS أو soundcraft، نقرر بعدين.
+- 2026-10-11: storytold نزّلوا craft-launcher وsoundcraft وwordcraft وgridcraft وdeckcraft وcadcraft (كلها Apache-2.0، Rust). قرار حمزة: **aswat صار fork من soundcraft** (بدل Audacity). الترتيب: trteeb ← launcher باسم شبشب (يثبّت ويحدّث كل البرامج) ← aswat (soundcraft) ← MCP موحّد ← 7rrek. برامج المكتب (word/grid/deck) وcadcraft: لاحقاً، حمزة بيعمل أسماء وهويات. mzika: انظر قرار 2026-10-12.
+
+- 2026-10-12: **mzika = fork من soundcraft** (مش LMMS). soundcraft مبني على Pro Tools (مسارات، مكسر، MIDI، piano roll، synths)، وما فيه step sequencer ولا patterns، فبنضيفهم إحنا (channel rack، sampler، playlist للـ patterns) مع مقامات بربع تون وإيقاعات شرقية (مقسوم، بلدي، سماعي، وحدة). aswat وmzika من نفس الأساس: aswat للتسجيل والتعديل، mzika للتأليف. storytold ما عندهم بديل FL (فحص 2026-10-12).
+- 2026-10-12 فحص storytold: جديد مش بالخطة: `craft-libs` (MIT/Apache، مكتبات مشتركة، البرامج رح تسحبها من git: ضيفها لـ `studio-sync`)، `craft-common-actions` (CI إصدارات لكل الأنظمة، بدون رخصة: نكتب نسختنا للـ launcher)، `artcraft` (AI صور وفيديو، MIT/Apache بس التوليد مدفوع: لاحقاً على شكل bring your own key)، `artcraft-services` (fair source، ممنوع)، `artcraftx` و`craft-repo-status-app` (بدون رخصة).
+- 2026-10-12: sharek على Hetzner (CX33، Ubuntu 24.04، مفتاح SSH `~/.ssh/creative_studio`). بستنى الـ IP من حمزة.
