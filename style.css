@@ -12,10 +12,10 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "IBM Plex Sans Arabic", "IBM Plex Sans", system-ui, sans-serif;
+      font-family: "Bricolage Grotesque", "IBM Plex Sans Arabic", system-ui, sans-serif;
       line-height: 1.6;
     }
-    .en { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    .en { font-family: "Bricolage Grotesque", system-ui, sans-serif; }
     a { color: inherit; }
     .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 
@@ -59,7 +59,8 @@
     footer p { margin: 4px 0; }
     .lang { position: absolute; top: 16px; inset-inline-end: 20px; border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 14px; cursor: pointer; color: var(--ink); }
     .lang:hover { border-color: var(--ink); }
-    html[lang="en"] body { font-family: "IBM Plex Sans", system-ui, sans-serif; }
+    html[lang="en"] body { font-family: "Bricolage Grotesque", system-ui, sans-serif; }
+    html[lang="en"] :is(h1, h2, h3, .app .name) { font-weight: 800; }
       .credits { margin-top: 14px !important; direction: ltr; text-align: start; }
     html[dir="rtl"] .credits { text-align: right; }
     .credits a, footer nav a { text-decoration: none; border-bottom: 1px solid var(--line); }
