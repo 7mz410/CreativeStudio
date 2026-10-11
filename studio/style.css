@@ -88,3 +88,12 @@
     .badge.live { background: var(--accent); color: #fff; }
     a.app:hover { border-color: var(--accent); }
     .about .lead { display: none; }
+    /* creative.ps look: white header band, navy apps band with white cards */
+    body { background: #fff; }
+    .apps { background: var(--navy); box-shadow: 0 0 0 100vmax var(--navy); clip-path: inset(0 -100vmax); padding: 56px 0 64px; margin-bottom: 40px; }
+    .apps h2 { color: #fff; text-align: center; }
+    .app { background: #fff; border-color: #fff; }
+    .app .name { color: var(--navy); }
+    .app .what { color: var(--muted); }
+    .badge { background: #eceae6; color: var(--muted); }
+    a.app:hover { border-color: var(--accent); box-shadow: 0 12px 28px rgba(0,0,0,.3); }
