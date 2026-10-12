@@ -231,3 +231,20 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 - 2026-10-12: **دمج upstream للكل** (rsm 796، tsweer 658، tlween 494، ttshat 386، effectat 290، sf7aat 234، klmat 12، والباقي 1). upstream صار يعتمد على `craft-libs` (`craft-ui`، `craft-print`)، والعربي بـ rsm بعد الدمج انفحص وشغّال. upstream نفسه بلّش يدعم RTL: PdfCraft (sf7aat) صار فيه عربي كامل من عنده، PhotoCraft وFilmCraft فيهم `direction`/`unicode-bidi`. طريقة الحل: `scratchpad/resolve.py` (upstream للكود، نسختنا للـ README، الاثنين لـ Cargo.toml وجداول الأصول) وبعدين `studio/rebrand.py`. تحسينات على rebrand: tlween بيحسب عدد اللغات لحاله، tsweer بيضيف العربي لجدول اللغات بدالة، sf7aat فيه `studio/update_hashes.py`. ترجمة: rsm دفعة 17 (458)، ttshat دفعة 15 (130 + 16 صيغة؛ 155 سطر release notes بالإنجليزي `-`)، tlween **1162 جملة بـ `part_19` لجولة الترجمة** (9 اختبارات عربي بتفشل لحد ما تنترجم). فشل معروف من upstream: ttshat `tests_model_setup` و`export_dialog_is_unchanged_in_a_tall_window`؛ ttshat `long_dialogs_fit_a_short_window` (الإعدادات أعرض بـ 10pt، منّا، بدها فحص)؛ sf7aat `inactive_tab_menu…` (اسم زر Windows على الماك).
 - 2026-10-12: **الأسماء الجديدة معتمدة (حمزة ونديم):** ttshat ← lamasat (لمسات)، shoof ← 3urood (عروض)، mzika ← al7an (ألحان)، launcher ← mansa (المنصّة)، effectat بيضل لاتيني واسمه العربي تأثيرات. الاسم العربي هو الأساسي بالواجهة العربية والموقع وشاشة التحميل. الوردمارك العربي بخط Lalezar. الصفحة: https://claude.ai/artifact/Cn2FDkPEeVBx4zYPA8md86.
 - 2026-10-12: **الأسماء انطبّقت:** الريبوهات `CreativeStudio-lamasat` و`CreativeStudio-3urood`، والفولدرات `lamasat/` و`3urood/`، وDNS (`lamasat.studio`، `3urood.studio`؛ ttshat وshoof انشالوا). اللوغوهات بـ `logos/Creative_Studio/` و`studio/logos/` صار اسمها lamasat و3urood وal7an وmansa. `studio/arabic_names.py` بكل برنامج (بيشتغل بآخر `rebrand.py`) بيحط الاسم العربي بالكتالوج العربي. شاشة التحميل: الاسم العربي بـ Lalezar وتحته اللاتيني. الصفحة الرئيسية محدّثة. الجاي: حرّك.
+
+## وين وصلنا (آخر تحديث 2026-10-12 مساءً)
+
+**منشور على studio.creative.ps (12 برنامج):** رسم، حرّك، تلوين، لمسات، تصوير، تأثيرات، ترتيب، صفحات، كلمات، أرقام، عروض + الصفحة الرئيسية وصفحة لكل برنامج (`studio/apps/*.html`، كتبها Gemini وراجعناها).
+**العربي:** كامل برسم وتلوين ولمسات وتصوير وترتيب وصفحات (من upstream) وأرقام (Gemini، بدون قلب الواجهة RTL لسا). ناقص: تأثيرات (الترجمات جوّا الكود)، كلمات، عروض (ما فيه نظام ترجمة).
+**دمج upstream 2026-10-12 (إيجنتس على branch `sync-20261012`، دمجناه بالـ main):** effectat 120، tlween 105، klmat 82، rsm 71، sf7aat 49. رسالة commit دمج رسم غلط ("Ignore Python caches"، a4538270) وانتركت. upstream issue مبلّغ: storytold/photocraft#4324 (4 اختبارات بتفشل على الماك).
+**تقرير أسبوعي:** routine كل أحد 10:00 (Amman) بيكتب "تقرير upstream الأسبوعي" بـ Claude Docs: https://claude.ai/code/routines/trig_01DbnPu1Wj8GDbxreD5aj995
+**حرّك (7rrek):** ريبو `CreativeStudio-7rrek` من rsm (`studio/anim_brand.py` بيسميه فوق branding رسم، الامتداد `.rsm` مشترك). engine: `cmd/anim.rs` (keyframes = sublayers، الفريمات view state، onion skin، تصدير GIF، التوقيت بـ `doc.unknown["animation"]`). UI: `timeline.rs` شريط تحت الكانفس (مقسوم صريح بـ lib.rs). كل الاختبارات ماشية.
+
+**الجاي بالترتيب:**
+1. حرّك: زر تصدير GIF بالـ timeline، motion tweens، قائمة Animation، فحص RTL بالعربي، دمج تحديثات rsm.
+2. المنصّة (mansa).
+3. أصوات (من soundcraft، البرومبت جاهز) ← ألحان.
+4. مهندس (cadcraft).
+5. MCP موحّد.
+- بالتوازي: شارك (Hetzner، بيستنى التكلفة والـ IP)، العربي لكلمات وعروض وتأثيرات، RTL لأرقام، الوردمارك العربي (Lalezar)، Enforce HTTPS للجداد، نافذة إعدادات لمسات (أعرض بـ 10pt)، امسح الـ cPanel token لما نخلص DNS.
+- **دروس:** إيجنتس بالتوازي: 2 بالمرة أو `CARGO_BUILD_JOBS=4` (الذاكرة خلصت مع 4). ما ألمس ريبو فيه إيجنت شغّال. حتى لو إيجنت قال "فحصت"، براجع بنفسي (صفحة حرّك كانت بتوعد بميزات مش موجودة).
