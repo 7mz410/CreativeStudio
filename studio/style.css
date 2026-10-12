@@ -118,3 +118,28 @@
     .upstream-card h3 { margin: 0 0 8px; font-size: 16px; color: var(--navy); }
     .upstream-card p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.6; }
     .upstream-card a { color: var(--navy); font-weight: 600; text-decoration: underline; }
+
+    /* App pages: a navy hero with the logo tile, then plain reading text. */
+    .app-page { background: #fff; }
+    .ap-hero { background: var(--navy); color: #fff; }
+    .ap-hero-in { max-width: 860px; margin: 0 auto; padding: 44px 20px; display: flex; align-items: center; gap: 36px; }
+    .ap-logo { flex: none; width: 150px; height: 150px; background: #fff; border-radius: 14px; display: grid; place-items: center; }
+    .ap-logo img { width: 104px; height: 104px; object-fit: contain; }
+    .ap-head { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; }
+    .ap-head h1 { margin: 0; font-family: "Lalezar", "IBM Plex Sans Arabic", system-ui, sans-serif; font-weight: 400; font-size: clamp(30px, 5.5vw, 50px); line-height: 1.25; color: #fff; text-wrap: balance; }
+    html[lang="en"] .ap-head h1 { font-family: "Bricolage Grotesque", system-ui, sans-serif; font-weight: 800; }
+    .ap-try { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 12px 64px; border-radius: 999px; transition: transform .15s ease, background-color .15s ease; }
+    .ap-try:hover { transform: translateY(-2px); background: #d01433; }
+    .ap-try:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+    .ap-body { max-width: 760px; margin: 0 auto; padding: 28px 0 48px; }
+    .ap-body .back { margin-bottom: 18px; }
+    .ap-body p { margin: 0 0 14px; font-size: 17px; line-height: 1.85; color: var(--navy); }
+    .ap-body p.ap-lead { font-size: 21px; font-weight: 700; margin-bottom: 22px; }
+    .ap-body strong { font-weight: 700; }
+    .ap-body p.ap-credit { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); font-size: 15px; color: var(--muted); }
+    .ap-body p.ap-credit a { color: var(--navy); }
+    @media (max-width: 560px) {
+      .ap-hero-in { flex-direction: column; gap: 22px; padding: 32px 16px; }
+      .ap-logo { width: 120px; height: 120px; }
+      .ap-logo img { width: 84px; height: 84px; }
+    }

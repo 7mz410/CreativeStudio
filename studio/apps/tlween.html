@@ -8,66 +8,32 @@
   <link rel="icon" type="image/svg+xml" href="../logos/tlween.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/tlween.svg" alt="tlween"></div>
+      <div class="ap-head">
+        <h1 data-en="tlween by Creative Studio">تلوين من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://tlween.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/tlween.svg" alt="tlween" class="hero-logo">
-        <div class="app-titles">
-          <h1>تلوين</h1>
-          <span class="latin-badge">tlween</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Layer-based raster image editing with masks and native PSD support.">تحرير صور نقطي بالطبقات والأقنعة ودعم أصيل لملفات PSD.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://tlween.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Layers &amp; Masks">طبقات وأقنعة متكاملة</h3>
-            <p data-en="Pixel layers, adjustment layers, raster and vector masks, and layer groups.">طبقات بكسلية، طبقات ضبط، أقنعة نقطية ومتجهة، ومجموعات طبقات منظمة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Native PSD &amp; PSB Support">دعم أصيل لملفات PSD</h3>
-            <p data-en="Open and save PSD and PSB files while preserving layers and blend modes.">فتح وحفظ ملفات PSD وPSB مع الحفاظ التام على الطبقات وأنماط الدمج.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Layer Styles &amp; Effects">أنماط الطبقات وتأثيراتها</h3>
-            <p data-en="Drop shadows, outer glow, strokes, color overlays, and gradient styles.">تطبيق الظلال والتوهج الخارجي والحدود وتراكب الألوان والتدرجات مباشرة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Digital Brushes">فراشٍ رقمية واقعية</h3>
-            <p data-en="Responsive brush engine with pressure sensitivity, smoothing, and flow control.">محرك فرش عالي الاستجابة مع دعم حساسية الضغط والتحكم بالنعومة والتدفق.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Non-Destructive Adjustments">تعديل غير مدمّر</h3>
-            <p data-en="Curves, levels, color balance, and hue adjustments editable at any time.">منحنيات ومستويات وتوازن ألوان وتدرجات قابلة للتعديل والرجوع في أي لحظة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="CMYK, Lab &amp; 32-bit">مساحات ألوان احترافية</h3>
-            <p data-en="Support for CMYK print, Lab color, and high-dynamic-range 16/32-bit depth.">دعم لمساحة الألوان الطباعية CMYK ومساحة Lab والصور عالية العمق 16 و32 بت.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Tile-Based Compositor">معالجة سريعة بالمربعات</h3>
-            <p data-en="Tile-based compositing for light memory usage and instant unlimited undo.">أداء سريع للمستندات الكبيرة وتراجع فوري غير محدود بأقل استهلاك للذاكرة.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener"&gt;PhotoCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-tlween" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener">PhotoCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-tlween" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Layer-based raster image editing with masks and native PSD support.">تحرير صور نقطي بالطبقات والأقنعة ودعم أصيل لملفات PSD.</p>
+      <p data-en="&lt;strong&gt;Layers &amp; Masks.&lt;/strong&gt; Pixel layers, adjustment layers, raster and vector masks, and layer groups."><strong>طبقات وأقنعة متكاملة.</strong> طبقات بكسلية، طبقات ضبط، أقنعة نقطية ومتجهة، ومجموعات طبقات منظمة.</p>
+      <p data-en="&lt;strong&gt;Native PSD &amp; PSB Support.&lt;/strong&gt; Open and save PSD and PSB files while preserving layers and blend modes."><strong>دعم أصيل لملفات PSD.</strong> فتح وحفظ ملفات PSD وPSB مع الحفاظ التام على الطبقات وأنماط الدمج.</p>
+      <p data-en="&lt;strong&gt;Layer Styles &amp; Effects.&lt;/strong&gt; Drop shadows, outer glow, strokes, color overlays, and gradient styles."><strong>أنماط الطبقات وتأثيراتها.</strong> تطبيق الظلال والتوهج الخارجي والحدود وتراكب الألوان والتدرجات مباشرة.</p>
+      <p data-en="&lt;strong&gt;Digital Brushes.&lt;/strong&gt; Responsive brush engine with pressure sensitivity, smoothing, and flow control."><strong>فراشٍ رقمية واقعية.</strong> محرك فرش عالي الاستجابة مع دعم حساسية الضغط والتحكم بالنعومة والتدفق.</p>
+      <p data-en="&lt;strong&gt;Non-Destructive Adjustments.&lt;/strong&gt; Curves, levels, color balance, and hue adjustments editable at any time."><strong>تعديل غير مدمّر.</strong> منحنيات ومستويات وتوازن ألوان وتدرجات قابلة للتعديل والرجوع في أي لحظة.</p>
+      <p data-en="&lt;strong&gt;CMYK, Lab &amp; 32-bit.&lt;/strong&gt; Support for CMYK print, Lab color, and high-dynamic-range 16/32-bit depth."><strong>مساحات ألوان احترافية.</strong> دعم لمساحة الألوان الطباعية CMYK ومساحة Lab والصور عالية العمق 16 و32 بت.</p>
+      <p data-en="&lt;strong&gt;Tile-Based Compositor.&lt;/strong&gt; Tile-based compositing for light memory usage and instant unlimited undo."><strong>معالجة سريعة بالمربعات.</strong> أداء سريع للمستندات الكبيرة وتراجع فوري غير محدود بأقل استهلاك للذاكرة.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener"&gt;PhotoCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-tlween" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener">PhotoCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-tlween" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>

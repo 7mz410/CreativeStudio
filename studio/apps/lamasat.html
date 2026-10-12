@@ -8,66 +8,32 @@
   <link rel="icon" type="image/svg+xml" href="../logos/lamasat.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/lamasat.svg" alt="lamasat"></div>
+      <div class="ap-head">
+        <h1 data-en="lamasat by Creative Studio">لمسات من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://lamasat.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/lamasat.svg" alt="lamasat" class="hero-logo">
-        <div class="app-titles">
-          <h1>لمسات</h1>
-          <span class="latin-badge">lamasat</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Photo library cataloging and RAW development with a fast, pure engine.">إدارة مكتبة الصور وتحميض ملفات RAW بمحرك معالجة مستقل وسريع.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://lamasat.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Native RAW Decoders">فك تشفير RAW أصيل</h3>
-            <p data-en="Direct RAW decoding for Canon CR2/CR3, Nikon NEF, Sony ARW, Fuji, and DNG.">فك تشفير كاميرات Canon وNikon وSony وFuji وDNG مباشرة بدون برامج وسيطة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Non-Destructive Develop">تحميض غير مدمّر</h3>
-            <p data-en="Exposure, white balance, shadows, highlights, and contrast saved non-destructively.">تعديل التعريض والحرارة والظلال والإضاءات والتباين مع حفظ التعديلات تلقائياً.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Tone Curves &amp; Color Grading">منحنيات وتدريج لوني</h3>
-            <p data-en="Per-channel tone curves and color grading wheels for shadows and highlights.">تحكم دقيق بالقنوات اللونية وعجلات ألوان للظلال والنغمات المتوسطة والإضاءات.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Catalog &amp; Collections">كتالوج وتنظيم ذكي</h3>
-            <p data-en="Organize photo collections with star ratings, color labels, and EXIF metadata.">تنظيم الصور في مجموعات وتصنيفها بالنجوم والألوان والبيانات الوصفية EXIF.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Batch Processing &amp; Sync">تعديل دفعي وتطبيق الإعدادات</h3>
-            <p data-en="Copy and synchronize develop adjustments across hundreds of photos at once.">نسخ إعدادات التحميض وتطبيقها على مئات الصور بضغطة زر واحدة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Contact Sheet PDF">أوراق اتصال للطباعة</h3>
-            <p data-en="Generate contact sheet PDF layouts for quick client proofs and review.">تصدير أوراق معاينة Contact Sheet بتنسيق PDF للمراجعة السريعة والطباعة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Instant Unlimited Undo">تراجع فوري عن أي خطوة</h3>
-            <p data-en="Every slider adjustment and command has reliable, instant undo.">كل سحب لشريط أو تغيير للإعدادات له تراجع آمن وتاريخ تعديل كامل.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/lightcraft" target="_blank" rel="noopener"&gt;LightCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-lamasat" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/lightcraft" target="_blank" rel="noopener">LightCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-lamasat" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Photo library cataloging and RAW development with a fast, pure engine.">إدارة مكتبة الصور وتحميض ملفات RAW بمحرك معالجة مستقل وسريع.</p>
+      <p data-en="&lt;strong&gt;Native RAW Decoders.&lt;/strong&gt; Direct RAW decoding for Canon CR2/CR3, Nikon NEF, Sony ARW, Fuji, and DNG."><strong>فك تشفير RAW أصيل.</strong> فك تشفير كاميرات Canon وNikon وSony وFuji وDNG مباشرة بدون برامج وسيطة.</p>
+      <p data-en="&lt;strong&gt;Non-Destructive Develop.&lt;/strong&gt; Exposure, white balance, shadows, highlights, and contrast saved non-destructively."><strong>تحميض غير مدمّر.</strong> تعديل التعريض والحرارة والظلال والإضاءات والتباين مع حفظ التعديلات تلقائياً.</p>
+      <p data-en="&lt;strong&gt;Tone Curves &amp; Color Grading.&lt;/strong&gt; Per-channel tone curves and color grading wheels for shadows and highlights."><strong>منحنيات وتدريج لوني.</strong> تحكم دقيق بالقنوات اللونية وعجلات ألوان للظلال والنغمات المتوسطة والإضاءات.</p>
+      <p data-en="&lt;strong&gt;Catalog &amp; Collections.&lt;/strong&gt; Organize photo collections with star ratings, color labels, and EXIF metadata."><strong>كتالوج وتنظيم ذكي.</strong> تنظيم الصور في مجموعات وتصنيفها بالنجوم والألوان والبيانات الوصفية EXIF.</p>
+      <p data-en="&lt;strong&gt;Batch Processing &amp; Sync.&lt;/strong&gt; Copy and synchronize develop adjustments across hundreds of photos at once."><strong>تعديل دفعي وتطبيق الإعدادات.</strong> نسخ إعدادات التحميض وتطبيقها على مئات الصور بضغطة زر واحدة.</p>
+      <p data-en="&lt;strong&gt;Contact Sheet PDF.&lt;/strong&gt; Generate contact sheet PDF layouts for quick client proofs and review."><strong>أوراق اتصال للطباعة.</strong> تصدير أوراق معاينة Contact Sheet بتنسيق PDF للمراجعة السريعة والطباعة.</p>
+      <p data-en="&lt;strong&gt;Instant Unlimited Undo.&lt;/strong&gt; Every slider adjustment and command has reliable, instant undo."><strong>تراجع فوري عن أي خطوة.</strong> كل سحب لشريط أو تغيير للإعدادات له تراجع آمن وتاريخ تعديل كامل.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/lightcraft" target="_blank" rel="noopener"&gt;LightCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-lamasat" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/lightcraft" target="_blank" rel="noopener">LightCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-lamasat" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>

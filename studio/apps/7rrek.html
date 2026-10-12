@@ -8,66 +8,32 @@
   <link rel="icon" type="image/svg+xml" href="../logos/7rrek.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/7rrek.svg" alt="7rrek"></div>
+      <div class="ap-head">
+        <h1 data-en="7rrek by Creative Studio">حرّك من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://7rrek.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/7rrek.svg" alt="7rrek" class="hero-logo">
-        <div class="app-titles">
-          <h1>حرّك</h1>
-          <span class="latin-badge">7rrek</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Vector animation and frame-by-frame motion with a flexible timeline.">رسوم متحركة متجهة وتحريك فريم-بفريم مع خط زمني مرن.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://7rrek.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Timeline">خط زمني</h3>
-            <p data-en="A row per layer and a column per frame, with the playhead and keyframe dots.">طبقة لكل صف وإطار لكل عمود، مع رأس تشغيل ونقاط للإطارات المفتاحية.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Frame by frame">إطار بإطار</h3>
-            <p data-en="Draw each keyframe with all of rsm’s tools: pen, shapes, brush and type.">ارسم كل إطار مفتاحي بكل أدوات رسم: القلم والأشكال والفرشاة والنص.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Keyframe or blank keyframe">إطار مفتاحي أو فارغ</h3>
-            <p data-en="Copy the previous drawing to change it, or start an empty frame.">انسخ رسمة الإطار السابق لتعدّل عليها، أو ابدأ إطاراً فارغاً.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Onion skin">شفافية الإطارات المجاورة</h3>
-            <p data-en="See the frames before and after faintly while you draw; they never reach the export.">ترى الإطار السابق واللاحق باهتين وأنت ترسم، دون أن يدخلا في التصدير.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Playback and frame rate">تشغيل وسرعة</h3>
-            <p data-en="Play the animation in the app, and set frames per second and the length.">شغّل الحركة داخل البرنامج، وحدّد عدد الإطارات في الثانية وطول المشهد.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Animated GIF export">تصدير GIF متحرك</h3>
-            <p data-en="Export the artboard as an animated GIF at the animation’s frame rate.">صدّر لوحة الرسم كصورة GIF متحركة بسرعة المشهد.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Coming next">قريباً</h3>
-            <p data-en="Motion tweens, animated symbols, and video and Lottie export.">التحريك البيني التلقائي، والرموز المتحركة، وتصدير الفيديو وLottie.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener"&gt;VectorCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-7rrek" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener">VectorCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-7rrek" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Vector animation and frame-by-frame motion with a flexible timeline.">رسوم متحركة متجهة وتحريك فريم-بفريم مع خط زمني مرن.</p>
+      <p data-en="&lt;strong&gt;Timeline.&lt;/strong&gt; A row per layer and a column per frame, with the playhead and keyframe dots."><strong>خط زمني.</strong> طبقة لكل صف وإطار لكل عمود، مع رأس تشغيل ونقاط للإطارات المفتاحية.</p>
+      <p data-en="&lt;strong&gt;Frame by frame.&lt;/strong&gt; Draw each keyframe with all of rsm’s tools: pen, shapes, brush and type."><strong>إطار بإطار.</strong> ارسم كل إطار مفتاحي بكل أدوات رسم: القلم والأشكال والفرشاة والنص.</p>
+      <p data-en="&lt;strong&gt;Keyframe or blank keyframe.&lt;/strong&gt; Copy the previous drawing to change it, or start an empty frame."><strong>إطار مفتاحي أو فارغ.</strong> انسخ رسمة الإطار السابق لتعدّل عليها، أو ابدأ إطاراً فارغاً.</p>
+      <p data-en="&lt;strong&gt;Onion skin.&lt;/strong&gt; See the frames before and after faintly while you draw; they never reach the export."><strong>شفافية الإطارات المجاورة.</strong> ترى الإطار السابق واللاحق باهتين وأنت ترسم، دون أن يدخلا في التصدير.</p>
+      <p data-en="&lt;strong&gt;Playback and frame rate.&lt;/strong&gt; Play the animation in the app, and set frames per second and the length."><strong>تشغيل وسرعة.</strong> شغّل الحركة داخل البرنامج، وحدّد عدد الإطارات في الثانية وطول المشهد.</p>
+      <p data-en="&lt;strong&gt;Animated GIF export.&lt;/strong&gt; Export the artboard as an animated GIF at the animation’s frame rate."><strong>تصدير GIF متحرك.</strong> صدّر لوحة الرسم كصورة GIF متحركة بسرعة المشهد.</p>
+      <p data-en="&lt;strong&gt;Coming next.&lt;/strong&gt; Motion tweens, animated symbols, and video and Lottie export."><strong>قريباً.</strong> التحريك البيني التلقائي، والرموز المتحركة، وتصدير الفيديو وLottie.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener"&gt;VectorCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-7rrek" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener">VectorCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-7rrek" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>

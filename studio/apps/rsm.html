@@ -8,70 +8,33 @@
   <link rel="icon" type="image/svg+xml" href="../logos/rsm.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/rsm.svg" alt="rsm"></div>
+      <div class="ap-head">
+        <h1 data-en="rsm by Creative Studio">رسم من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://rsm.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/rsm.svg" alt="rsm" class="hero-logo">
-        <div class="app-titles">
-          <h1>رسم</h1>
-          <span class="latin-badge">rsm</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Fast, precise vector illustration with professional tools and a full Arabic interface.">رسم متجهي سريع ودقيق، بأدوات احترافية وواجهة عربية كاملة.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://rsm.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Pen &amp; Bézier Paths">أداة القلم والمسار</h3>
-            <p data-en="Precise Bézier curves and anchor handles with a contextual task bar.">مسارات ومنحنيات بيزييه دقيقة مع مقابض تحكم سهلة وشريط مهام سياقي.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Boolean Operations">عمليات دمج الأشكال</h3>
-            <p data-en="Unite, intersect, and exclude shapes with exact curve booleans.">توحيد وتقاطع وقص الأشكال الحسابية بدقة متناهية وبدون أخطاء هندسية.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Live Repeat &amp; Patterns">تكرار ومحاذاة ديناميكية</h3>
-            <p data-en="Radial and grid repeat patterns with live on-canvas adjustment.">تكرار شعاعي وشبكي للأشكال مع إمكانية التعديل المباشر على اللوحة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Perspective Grid">شبكة المنظور</h3>
-            <p data-en="Draw and edit artwork directly attached to perspective planes.">رسم وتعديل العناصر مباشرة على مستويات المنظور بنقطة أو نقطتين.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Live Blends &amp; Appearance">تدرجات وظلال حية</h3>
-            <p data-en="Smooth color blends, gradient meshes, and live appearance effects.">تدرجات لونية ناعمة وشبكات تلوين متقدمة مع مؤثرات توهج حي وظلال.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Multiple Artboards">لوحات رسم متعددة</h3>
-            <p data-en="Organize projects across multiple artboards and export them cleanly.">تنظيم تصاميم المشروع في لوحات متعددة وتصدير كل لوحة بدقة مستقلة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Open Vector Formats">تصدير واستيراد مرن</h3>
-            <p data-en="First-class SVG, PDF export, and an open, readable JSON project format.">توافق مع ملفات SVG وPDF وتنسيق ملفات مفتوح مبني على JSON وقابل للقراءة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="SIMD Engine Performance">محرك رسم فائق السرعة</h3>
-            <p data-en="Multithreaded SIMD rendering displaying tens of thousands of shapes at 120 fps.">معالجة متعددة المسارات ترسم آلاف الأشكال بانسيابية 120 إطاراً في الثانية.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener"&gt;VectorCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-rsm" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener">VectorCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-rsm" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Fast, precise vector illustration with professional tools and a full Arabic interface.">رسم متجهي سريع ودقيق، بأدوات احترافية وواجهة عربية كاملة.</p>
+      <p data-en="&lt;strong&gt;Pen &amp; Bézier Paths.&lt;/strong&gt; Precise Bézier curves and anchor handles with a contextual task bar."><strong>أداة القلم والمسار.</strong> مسارات ومنحنيات بيزييه دقيقة مع مقابض تحكم سهلة وشريط مهام سياقي.</p>
+      <p data-en="&lt;strong&gt;Boolean Operations.&lt;/strong&gt; Unite, intersect, and exclude shapes with exact curve booleans."><strong>عمليات دمج الأشكال.</strong> توحيد وتقاطع وقص الأشكال الحسابية بدقة متناهية وبدون أخطاء هندسية.</p>
+      <p data-en="&lt;strong&gt;Live Repeat &amp; Patterns.&lt;/strong&gt; Radial and grid repeat patterns with live on-canvas adjustment."><strong>تكرار ومحاذاة ديناميكية.</strong> تكرار شعاعي وشبكي للأشكال مع إمكانية التعديل المباشر على اللوحة.</p>
+      <p data-en="&lt;strong&gt;Perspective Grid.&lt;/strong&gt; Draw and edit artwork directly attached to perspective planes."><strong>شبكة المنظور.</strong> رسم وتعديل العناصر مباشرة على مستويات المنظور بنقطة أو نقطتين.</p>
+      <p data-en="&lt;strong&gt;Live Blends &amp; Appearance.&lt;/strong&gt; Smooth color blends, gradient meshes, and live appearance effects."><strong>تدرجات وظلال حية.</strong> تدرجات لونية ناعمة وشبكات تلوين متقدمة مع مؤثرات توهج حي وظلال.</p>
+      <p data-en="&lt;strong&gt;Multiple Artboards.&lt;/strong&gt; Organize projects across multiple artboards and export them cleanly."><strong>لوحات رسم متعددة.</strong> تنظيم تصاميم المشروع في لوحات متعددة وتصدير كل لوحة بدقة مستقلة.</p>
+      <p data-en="&lt;strong&gt;Open Vector Formats.&lt;/strong&gt; First-class SVG, PDF export, and an open, readable JSON project format."><strong>تصدير واستيراد مرن.</strong> توافق مع ملفات SVG وPDF وتنسيق ملفات مفتوح مبني على JSON وقابل للقراءة.</p>
+      <p data-en="&lt;strong&gt;SIMD Engine Performance.&lt;/strong&gt; Multithreaded SIMD rendering displaying tens of thousands of shapes at 120 fps."><strong>محرك رسم فائق السرعة.</strong> معالجة متعددة المسارات ترسم آلاف الأشكال بانسيابية 120 إطاراً في الثانية.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener"&gt;VectorCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-rsm" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/vectorcraft" target="_blank" rel="noopener">VectorCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-rsm" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>

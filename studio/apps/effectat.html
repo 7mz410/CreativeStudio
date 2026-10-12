@@ -8,66 +8,32 @@
   <link rel="icon" type="image/svg+xml" href="../logos/effectat.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/effectat.svg" alt="effectat"></div>
+      <div class="ap-head">
+        <h1 data-en="effectat by Creative Studio">تأثيرات من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://effectat.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/effectat.svg" alt="effectat" class="hero-logo">
-        <div class="app-titles">
-          <h1>تأثيرات</h1>
-          <span class="latin-badge">effectat</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Motion graphics and visual effects with compositing and native Lottie support.">موشن جرافيك ومؤثرات بصرية مع خط زمني مركب ودعم Lottie.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://effectat.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Layer Compositing">تركيب طبقات متعددة</h3>
-            <p data-en="Solids, shape layers, text, footage, nested comps, and null objects.">طبقات صلبة، نصوص، أشكال متجهة، لقطات فيديو، وتراكيب متداخلة مركبة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Keyframe Interpolation">مفاتيح حركة متقدمة</h3>
-            <p data-en="Linear, Bezier, continuous velocity curves, and spatial motion interpolation.">تحكم بمنحنيات السرعة، تحريك بيزييه، إبطاء وتسارع سلس، وتكرار الحركة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Vector Shape Animators">تحريك الأشكال والمسارات</h3>
-            <p data-en="Shape layer animators including trim paths, repeaters, wiggle, and round corners.">مسارات مشذبة Trim Paths، مكررات Repeaters، زوايا مستديرة، وتعرج وتذبذب.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Built-In Lottie Workflow">استيراد وتصدير Lottie مدمج</h3>
-            <p data-en="Direct Lottie JSON import and export for fast, lightweight web and app animations.">تصميم الرسوم المتحركة وتصديرها مباشرة كملفات JSON خفيفة للويب والتطبيقات.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Time Remapping">تحكم زمني كامل</h3>
-            <p data-en="Time remapping, stretch, reverse, and freeze frames with exact timing.">تسريع، تبطيء، تجميد الإطارات، وعكس اتجاه الحركة بدقة إطار بإطار.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Open JSON Project Format">ملفات مشروع مفتوحة</h3>
-            <p data-en="Clean, human-readable JSON project files that version control cleanly.">مشاريع بصيغة JSON واضحة ومقروءة يمكن إدارتها بسهولة بنظم حفظ النسخ.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Pure Rust Performance">محرك أداء نقي</h3>
-            <p data-en="Fast, self-contained rendering and playback built natively in pure Rust.">معالجة رسومية وصوتية مدمجة وسريعة تعمل دون الحاجة لحزم تشغيل ضخمة.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/effectcraft" target="_blank" rel="noopener"&gt;EffectCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-effectat" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/effectcraft" target="_blank" rel="noopener">EffectCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-effectat" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Motion graphics and visual effects with compositing and native Lottie support.">موشن جرافيك ومؤثرات بصرية مع خط زمني مركب ودعم Lottie.</p>
+      <p data-en="&lt;strong&gt;Layer Compositing.&lt;/strong&gt; Solids, shape layers, text, footage, nested comps, and null objects."><strong>تركيب طبقات متعددة.</strong> طبقات صلبة، نصوص، أشكال متجهة، لقطات فيديو، وتراكيب متداخلة مركبة.</p>
+      <p data-en="&lt;strong&gt;Keyframe Interpolation.&lt;/strong&gt; Linear, Bezier, continuous velocity curves, and spatial motion interpolation."><strong>مفاتيح حركة متقدمة.</strong> تحكم بمنحنيات السرعة، تحريك بيزييه، إبطاء وتسارع سلس، وتكرار الحركة.</p>
+      <p data-en="&lt;strong&gt;Vector Shape Animators.&lt;/strong&gt; Shape layer animators including trim paths, repeaters, wiggle, and round corners."><strong>تحريك الأشكال والمسارات.</strong> مسارات مشذبة Trim Paths، مكررات Repeaters، زوايا مستديرة، وتعرج وتذبذب.</p>
+      <p data-en="&lt;strong&gt;Built-In Lottie Workflow.&lt;/strong&gt; Direct Lottie JSON import and export for fast, lightweight web and app animations."><strong>استيراد وتصدير Lottie مدمج.</strong> تصميم الرسوم المتحركة وتصديرها مباشرة كملفات JSON خفيفة للويب والتطبيقات.</p>
+      <p data-en="&lt;strong&gt;Time Remapping.&lt;/strong&gt; Time remapping, stretch, reverse, and freeze frames with exact timing."><strong>تحكم زمني كامل.</strong> تسريع، تبطيء، تجميد الإطارات، وعكس اتجاه الحركة بدقة إطار بإطار.</p>
+      <p data-en="&lt;strong&gt;Open JSON Project Format.&lt;/strong&gt; Clean, human-readable JSON project files that version control cleanly."><strong>ملفات مشروع مفتوحة.</strong> مشاريع بصيغة JSON واضحة ومقروءة يمكن إدارتها بسهولة بنظم حفظ النسخ.</p>
+      <p data-en="&lt;strong&gt;Pure Rust Performance.&lt;/strong&gt; Fast, self-contained rendering and playback built natively in pure Rust."><strong>محرك أداء نقي.</strong> معالجة رسومية وصوتية مدمجة وسريعة تعمل دون الحاجة لحزم تشغيل ضخمة.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/effectcraft" target="_blank" rel="noopener"&gt;EffectCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-effectat" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/effectcraft" target="_blank" rel="noopener">EffectCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-effectat" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>

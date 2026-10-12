@@ -8,66 +8,32 @@
   <link rel="icon" type="image/svg+xml" href="../logos/sf7aat.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/sf7aat.svg" alt="sf7aat"></div>
+      <div class="ap-head">
+        <h1 data-en="sf7aat by Creative Studio">صفحات من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://sf7aat.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/sf7aat.svg" alt="sf7aat" class="hero-logo">
-        <div class="app-titles">
-          <h1>صفحات</h1>
-          <span class="latin-badge">sf7aat</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Inspect, organize, merge, split, and secure PDF documents safely.">استعراض مستندات PDF وتنظيمها ودمجها وتقسيمها بأمان وخصوصية.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://sf7aat.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Deep Tiled Zoom">تكبير عالي الدقة دون فقدان الوضوح</h3>
-            <p data-en="Tiled deep zoom keeping vector lines and type razor-sharp at any magnification.">عرض الصفحات والمخططات الضخمة بدقة متناهية دون أي تشويش للخطوط.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Page Organizing">تنظيم الصفحات وإعادة ترتيبها</h3>
-            <p data-en="Drag-and-drop page reordering, rotation, deletion, and extraction.">سحب وإفلات لإعادة ترتيب الصفحات، وتدوير، وحذف، واستخراج الصفحات بسهولة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Merge &amp; Split PDFs">دمج وتقسيم المستندات</h3>
-            <p data-en="Combine multiple documents into one or split large files into targeted sections.">جمع ملفات متعددة في ملف واحد، أو استخراج نطاق صفحات محدد.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Versatile Reading Layouts">أوضاع عرض متعددة</h3>
-            <p data-en="Continuous scroll, single page, two-up spread, and full-screen presentation views.">عرض مستمر، صفحة مفردة، صفحتان متقابلتان، ملء الشاشة، وتدوير العرض.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="PDF Security &amp; Passwords">حماية وتشفير المستندات</h3>
-            <p data-en="Protect sensitive files with standard passwords and permission settings.">إضافة كلمات مرور وتعيين أذونات الطباعة والنسخ بأمان وموثوقية.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="100% Offline &amp; Private">خصوصية مطلقة بدون رفع للإنترنت</h3>
-            <p data-en="All processing runs locally on your machine with zero data uploaded to the cloud.">معالجة المستندات محلياً على جهازك دون إرسال أي بيانات إلى خوادم سحابية.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Dark &amp; Light Reading Modes">سمات مريحة للقراءة</h3>
-            <p data-en="Carefully tuned dark and light modes designed for long reading and review sessions.">سمات داكنة وفاتحة مصممة بعناية لتوفير راحة العين أثناء قراءة المستندات الطويلة.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/pdfcraft" target="_blank" rel="noopener"&gt;PdfCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-sf7aat" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/pdfcraft" target="_blank" rel="noopener">PdfCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-sf7aat" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Inspect, organize, merge, split, and secure PDF documents safely.">استعراض مستندات PDF وتنظيمها ودمجها وتقسيمها بأمان وخصوصية.</p>
+      <p data-en="&lt;strong&gt;Deep Tiled Zoom.&lt;/strong&gt; Tiled deep zoom keeping vector lines and type razor-sharp at any magnification."><strong>تكبير عالي الدقة دون فقدان الوضوح.</strong> عرض الصفحات والمخططات الضخمة بدقة متناهية دون أي تشويش للخطوط.</p>
+      <p data-en="&lt;strong&gt;Page Organizing.&lt;/strong&gt; Drag-and-drop page reordering, rotation, deletion, and extraction."><strong>تنظيم الصفحات وإعادة ترتيبها.</strong> سحب وإفلات لإعادة ترتيب الصفحات، وتدوير، وحذف، واستخراج الصفحات بسهولة.</p>
+      <p data-en="&lt;strong&gt;Merge &amp; Split PDFs.&lt;/strong&gt; Combine multiple documents into one or split large files into targeted sections."><strong>دمج وتقسيم المستندات.</strong> جمع ملفات متعددة في ملف واحد، أو استخراج نطاق صفحات محدد.</p>
+      <p data-en="&lt;strong&gt;Versatile Reading Layouts.&lt;/strong&gt; Continuous scroll, single page, two-up spread, and full-screen presentation views."><strong>أوضاع عرض متعددة.</strong> عرض مستمر، صفحة مفردة، صفحتان متقابلتان، ملء الشاشة، وتدوير العرض.</p>
+      <p data-en="&lt;strong&gt;PDF Security &amp; Passwords.&lt;/strong&gt; Protect sensitive files with standard passwords and permission settings."><strong>حماية وتشفير المستندات.</strong> إضافة كلمات مرور وتعيين أذونات الطباعة والنسخ بأمان وموثوقية.</p>
+      <p data-en="&lt;strong&gt;100% Offline &amp; Private.&lt;/strong&gt; All processing runs locally on your machine with zero data uploaded to the cloud."><strong>خصوصية مطلقة بدون رفع للإنترنت.</strong> معالجة المستندات محلياً على جهازك دون إرسال أي بيانات إلى خوادم سحابية.</p>
+      <p data-en="&lt;strong&gt;Dark &amp; Light Reading Modes.&lt;/strong&gt; Carefully tuned dark and light modes designed for long reading and review sessions."><strong>سمات مريحة للقراءة.</strong> سمات داكنة وفاتحة مصممة بعناية لتوفير راحة العين أثناء قراءة المستندات الطويلة.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/pdfcraft" target="_blank" rel="noopener"&gt;PdfCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-sf7aat" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/pdfcraft" target="_blank" rel="noopener">PdfCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-sf7aat" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>

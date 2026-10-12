@@ -8,66 +8,32 @@
   <link rel="icon" type="image/svg+xml" href="../logos/arqam.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="app-page">
   <button class="lang" id="lang" type="button" lang="en">English</button>
+  <header class="ap-hero">
+    <div class="ap-hero-in">
+      <div class="ap-logo"><img src="../logos/arqam.svg" alt="arqam"></div>
+      <div class="ap-head">
+        <h1 data-en="arqam by Creative Studio">أرقام من كرييتف ستوديو</h1>
+        <a class="ap-try" href="https://arqam.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
+      </div>
+    </div>
+  </header>
   <div class="wrap">
-    <header class="app-header">
+    <main class="ap-body">
       <a class="back" href="../index.html" data-en="← Creative Studio">→ Creative Studio</a>
-      <div class="app-identity">
-        <img src="../logos/arqam.svg" alt="arqam" class="hero-logo">
-        <div class="app-titles">
-          <h1>أرقام</h1>
-          <span class="latin-badge">arqam</span>
-        </div>
-      </div>
-      <p class="tagline" data-en="Fast, modern spreadsheets with dynamic formulas and full XLSX compatibility.">جداول بيانات سريعة وصيغ حسابية متقدمة وتوافق تام مع XLSX.</p>
-      <div class="hero-actions">
-        <a class="btn-primary" href="https://arqam.studio.creative.ps/" target="_blank" rel="noopener" data-en="Try it now">جرّبه الآن</a>
-      </div>
-    </header>
-
-    <main class="app-content">
-      <section class="features-section">
-        <h2 data-en="Features">الميزات الأساسية</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <h3 data-en="Native XLSX Compatibility">توافق كامل مع ملفات XLSX</h3>
-            <p data-en="Open and save XLSX workbooks preserving formulas, cell formats, and sheet layouts.">فتح وحفظ المصنفات مع الحفاظ على الصيغ والأنماط والأوراق والألوان والخطوط.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Dependency-Graph Formula Engine">محرك حسابات وصيغ متقدم</h3>
-            <p data-en="Fast calculation engine with dynamic arrays and spilling formulas.">دعم مئات الدوال الرياضية والمالية والإحصائية والمصفوفات الديناميكية المتدفقة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Conditional Formatting &amp; Table Styles">تنسيق شرطي وأنماط جداول</h3>
-            <p data-en="Highlight key data with color scales, data bars, icon sets, and custom rules.">تمييز الخلايا وفق القواعد وأشرطة البيانات ومقاييس الألوان والأيقونات.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Interactive Charts">مخططات بيانية تفاعلية</h3>
-            <p data-en="Bar, line, pie, and scatter charts with customized titles, legends, and axes.">إنشاء مخططات الأعمدة والخطوط والدوائر والأسهم مع تخصيص المظهر وتسميات البيانات.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Sorting, Filters &amp; Pivot Tables">تصفية وفرز وجداول محورية</h3>
-            <p data-en="Sort, multi-condition filters, and pivot tables for quick data aggregation.">فرز وتصفية البيانات المتقدمة وتلخيص المجموعات الضخمة بكفاءة عالية.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Freeze Panes &amp; Print Setup">تجميد الأجزاء وتخطيط الطباعة</h3>
-            <p data-en="Freeze top rows and columns, customize print titles, margins, and page breaks.">تثبيت الصفوف والأعمدة العلوية وضبط هوامش وفواصل الصفحات وعناوين الطباعة.</p>
-          </div>
-          <div class="feature-card">
-            <h3 data-en="Copy-on-Write Performance">تراجع فوري وخفة استهلاك الذاكرة</h3>
-            <p data-en="Copy-on-write workbook architecture delivering instant undo and light memory use.">حفظ فوري للحالات وتراجع غير محدود دون أي إبطاء في المصنفات الضخمة.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="upstream-card">
-        <h3 data-en="Open Source Foundation">مفتوح المصدر بالكامل</h3>
-        <p data-en='Based on &lt;a href="https://github.com/storytold/gridcraft" target="_blank" rel="noopener"&gt;GridCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-arqam" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/gridcraft" target="_blank" rel="noopener">GridCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-arqam" target="_blank" rel="noopener">GitHub</a>.</p>
-      </section>
+      <p class="ap-lead" data-en="Fast, modern spreadsheets with dynamic formulas and full XLSX compatibility.">جداول بيانات سريعة وصيغ حسابية متقدمة وتوافق تام مع XLSX.</p>
+      <p data-en="&lt;strong&gt;Native XLSX Compatibility.&lt;/strong&gt; Open and save XLSX workbooks preserving formulas, cell formats, and sheet layouts."><strong>توافق كامل مع ملفات XLSX.</strong> فتح وحفظ المصنفات مع الحفاظ على الصيغ والأنماط والأوراق والألوان والخطوط.</p>
+      <p data-en="&lt;strong&gt;Dependency-Graph Formula Engine.&lt;/strong&gt; Fast calculation engine with dynamic arrays and spilling formulas."><strong>محرك حسابات وصيغ متقدم.</strong> دعم مئات الدوال الرياضية والمالية والإحصائية والمصفوفات الديناميكية المتدفقة.</p>
+      <p data-en="&lt;strong&gt;Conditional Formatting &amp; Table Styles.&lt;/strong&gt; Highlight key data with color scales, data bars, icon sets, and custom rules."><strong>تنسيق شرطي وأنماط جداول.</strong> تمييز الخلايا وفق القواعد وأشرطة البيانات ومقاييس الألوان والأيقونات.</p>
+      <p data-en="&lt;strong&gt;Interactive Charts.&lt;/strong&gt; Bar, line, pie, and scatter charts with customized titles, legends, and axes."><strong>مخططات بيانية تفاعلية.</strong> إنشاء مخططات الأعمدة والخطوط والدوائر والأسهم مع تخصيص المظهر وتسميات البيانات.</p>
+      <p data-en="&lt;strong&gt;Sorting, Filters &amp; Pivot Tables.&lt;/strong&gt; Sort, multi-condition filters, and pivot tables for quick data aggregation."><strong>تصفية وفرز وجداول محورية.</strong> فرز وتصفية البيانات المتقدمة وتلخيص المجموعات الضخمة بكفاءة عالية.</p>
+      <p data-en="&lt;strong&gt;Freeze Panes &amp; Print Setup.&lt;/strong&gt; Freeze top rows and columns, customize print titles, margins, and page breaks."><strong>تجميد الأجزاء وتخطيط الطباعة.</strong> تثبيت الصفوف والأعمدة العلوية وضبط هوامش وفواصل الصفحات وعناوين الطباعة.</p>
+      <p data-en="&lt;strong&gt;Copy-on-Write Performance.&lt;/strong&gt; Copy-on-write workbook architecture delivering instant undo and light memory use."><strong>تراجع فوري وخفة استهلاك الذاكرة.</strong> حفظ فوري للحالات وتراجع غير محدود دون أي إبطاء في المصنفات الضخمة.</p>
+      <p class="ap-credit" data-en='Based on &lt;a href="https://github.com/storytold/gridcraft" target="_blank" rel="noopener"&gt;GridCraft&lt;/a&gt; by the &lt;a href="https://getartcraft.com/" target="_blank" rel="noopener"&gt;ArtCraft&lt;/a&gt; team. Source code and Arabic additions on &lt;a href="https://github.com/7mz410/CreativeStudio-arqam" target="_blank" rel="noopener"&gt;GitHub&lt;/a&gt;.'>مبني على برنامج <a href="https://github.com/storytold/gridcraft" target="_blank" rel="noopener">GridCraft</a> من فريق <a href="https://getartcraft.com/" target="_blank" rel="noopener">ArtCraft</a>. الكود المصدري وإضافات الواجهة العربية متوفرة على <a href="https://github.com/7mz410/CreativeStudio-arqam" target="_blank" rel="noopener">GitHub</a>.</p>
     </main>
 
     <footer>
