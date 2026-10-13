@@ -131,8 +131,9 @@
     .ap-try { display: inline-block; background: var(--accent); color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 12px 64px; border-radius: 999px; transition: transform .15s ease, background-color .15s ease; }
     .ap-try:hover { transform: translateY(-2px); background: #d01433; }
     .ap-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-    .ap-try.ap-dl { background: #fff; color: var(--navy); }
-    .ap-try.ap-dl:hover { background: #eceae6; }
+    .ap-try.ap-dl { background: var(--navy); color: #fff; box-shadow: inset 0 0 0 2px rgba(255,255,255,.55); }
+    .ap-try.ap-dl:hover { background: #164a66; }
+    a.app.ap-dl .badge { background: var(--navy); color: #fff; }
     .ap-dl-os { display: block; color: rgba(255,255,255,.7); font-size: 13px; margin-top: -10px; }
     .ap-try:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
     .ap-body { max-width: 760px; margin: 0 auto; padding: 28px 0 48px; }
