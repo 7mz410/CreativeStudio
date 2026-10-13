@@ -116,29 +116,19 @@
   4. mzika.
   5. الباقي.
 
-## 5. شو بدنا نعمل (بالترتيب)
+## 5. شو بدنا نعمل (بالترتيب) — محدّثة 2026-10-13
 
-**قرار 2026-10-10 (مساءً): كل شغل الترجمة العربية مؤجّل للأسبوع الجاي.** هلأ بس: fork، هوية، أيقونة، كريدتس، ويب. بعدين جولة ترجمة واحدة لكل الباقي (effectat أولاً، وبعدها sf7aat وغيره).
+**خلص لحد هلّق:** 16 برنامج (رسم، حرّك، تلوين، لمسات، تصوير، تأثيرات، ترتيب، صفحات، كلمات، أرقام، عروض، مهندس، شارك، أصوات، ألحان، المنصّة)، كلهم بهوية Creative Studio وأيقونة النجمة على بطاقة بيضا، ومنشورين `v1.0.x` (unsigned) لماك وويندوز ولينكس، وبتنزيل من studio.creative.ps. القديم والتفاصيل: §4 والسجل آخر الملف.
 
-قرار 2026-10-10: نبني السويت كلها أولاً، ثم نضيف على كل برنامج ميزات عربية خاصة. الـ RTL أولاً لأنه ينتقل لكل برامج عيلة ArtCraft (نفس egui).
-
-1. ~~إصلاح الاختبار ورفع الويب~~ ✅، ~~دمج upstream~~ ✅ (كرّره دورياً بـ `shibshib-sync`)، ~~إزالة بقايا ArtCraft~~ ✅، ~~امتداد `.rsm` وأيقونة الملف~~ ✅
-2. ~~**RTL**~~ ✅ (2026-10-10): مفتاح واحد في egui المعدّل (`vendor/egui`، `egui::set_rtl`) يقلب الواجهة كلها (اللوحات، الصفوف، Grid، الأعمدة، القوائم، النوافذ). باقي تفاصيل مرسومة بإحداثيات ثابتة: صفوف الطبقات، تبويبات المستندات، أزرار أسفل اللوحات. التفاصيل في `shibshib/RTL.md`.
-3. ~~**الـ agents كميزة**~~ ✅ (2026-10-10): Help › AI Agents… (وكلاء الذكاء الاصطناعي): تفعيل قناة التحكم (تبدأ مع البرنامج بعدها)، وأزرار ربط Claude Desktop وClaude Code وGemini CLI، ونص إعداد للباقي. باقي: إشارة اتصال بشريط الحالة. أيقونة الديسكتوب "شبشب رسم + Agents" ما عاد لها لزوم.
-4. **برامج عيلة ArtCraft** (عبر `shibshib-fork-app`، كل واحد ياخذ الهوية والعربي والـ RTL والـ MCP): ttshat (LightCraft) ← tlween (PhotoCraft) ← tsweer (FilmCraft) ← effectat (EffectCraft) ← **sf7aat (صفحات)، بديل Acrobat من PdfCraft** (اللوغو `logos/sf7aat.svg`، الأيقونة `file icons/sf7aat.svg`، الاسم أبيض `file icons/sf7aat-name-white.svg`) ← trteeb (DesignCraft، عندما يجهز).
-   - **ttshat (جاري، 2026-10-10):** fork في https://github.com/7mz410/ShibShib-ttshat، والنسخة المحلية `~/Documents/ShibShib/ttshat`. تم: الهوية (`shibshib/rebrand.py`)، الأيقونة، الكريدتس، حذف `docs/brand`، الـ RTL (`vendor/egui` منسوخ من rsm)، خط IBM Plex Sans Arabic، `bidi.rs`. باقي: الترجمة العربية (1878 جملة + 230 صيغة) في `shibshib/ar-work/`، بعدها نضيف `Ar` لجدول اللغات في `i18n.rs`. نظام الترجمة هون JSON (`crates/ui-egui/locales/<code>.json` و`<code>-formats.json`)، مش TSV متل rsm. 5 اختبارات `tests_model_setup` بتفشل بالأصل نفسه.
-   - **ttshat ✅ (2026-10-10):** العربي كامل (2108 جملة، `shibshib/ar-work/`، صيغ format! بـ `{:.0}` لإخفاء لاحقة الجمع الإنجليزية)، وصار بقائمة اللغات. على الويب: https://ttshat.shibshib.art. باقي: screenshot بالعربي ومراجعة حمزة للمصطلحات، وفحص الواجهة بالـ RTL.
-   - **tlween ✅ (2026-10-10):** fork من PhotoCraft (https://github.com/7mz410/ShibShib-tlween، محلياً `~/Documents/ShibShib/tlween`). تم: الهوية والأيقونة والكريدتس، حذف زر Discord ولينك ArtCraft، الـ RTL (`vendor/egui`)، خط IBM Plex Sans Arabic، `bidi.rs`، والعربي كامل (2766 جملة، `shibshib/ar-work/`، جمع عربي بست صيغ وكل صيغة فيها `{n}`). كل تعديلات ملفات upstream مسجّلة في `RTL_RULES` بـ `rebrand.py`. الاختبارات 1580/1580. الويب: https://tlween.shibshib.art. باقي: مراجعة حمزة للمصطلحات، وفحص الواجهة بالـ RTL بالتفصيل.
-   - **tsweer ✅ (2026-10-10):** fork من FilmCraft (https://github.com/7mz410/ShibShib-tsweer، محلياً `~/Documents/ShibShib/tsweer`). تم: الهوية والأيقونة والكريدتس (ملف `.attribution` لكل asset، يفحصه `cargo xtask assets`)، شعار tsweer مكان شعار ArtCraft، حذف زر Discord، الـ RTL، خط IBM Plex Sans Arabic، والعربي كامل (3495 جملة). اللوحات بتصوير مبنية بتخطيط خاص، فما بتنقلب جهاتها لحالها (باقي). `rebrand.py` بيغيّر الاسم بمفاتيح الترجمة بس إذا الكود غيّره (بعض الـ crates برّا الواجهة لسا فيها FilmCraft). الويب: https://tsweer.shibshib.art.
-   - **effectat (2026-10-10):** fork من EffectCraft (https://github.com/7mz410/ShibShib-effectat، محلياً `~/Documents/ShibShib/effectat`). تم: الهوية والأيقونة (مكان علامة ArtCraft بشريط الأدوات وAbout)، روابط Help، الكريدتس. الويب: https://effectat.shibshib.art. **العربي مؤجّل:** ترجمات EffectCraft مكتوبة جوّا الكود (`crates/ui-egui/src/i18n.rs` و`i18n/ui.rs`، 6500 سطر)، لازم أولاً ننقلها لملف TSV منفصل بطريقة ما تتعارض مع upstream. 10 اختبارات `pointer_wrap` بتفشل بالأصل نفسه. ملف المشروع (XML) فيه اسم EffectCraft، ممنوع نغيّره (صيغة محفوظة).
-   - **sf7aat (صفحات) (2026-10-10):** fork من PdfCraft (https://github.com/7mz410/ShibShib-sf7aat، محلياً `~/Documents/ShibShib/sf7aat`). تم: الهوية والأيقونة، شعار sf7aat مكان شعار وعلامة ArtCraft، روابط Help والشاشة الرئيسية، فحص التحديثات صار يسأل ريبونا. الأصول هون مسجّلة بـ `ATTRIBUTION.toml` مع sha256 لكل ملف (بعد `rebrand.py` لازم نحدّث الـ hashes ونشغّل `cargo xtask assets --write`). الاختبارات كلها تمر. الويب: https://sf7aat.shibshib.art. العربي مع جولة الترجمة الأسبوع الجاي.
-   - **ملاحظة لكل rebrand.py:** قاعدة الاستبدال بنص فاضي لازم تتطبّق كل مرة (`if not b or b not in out`)، انصلحت بالثلاثة.
-   - **الدومينات:** حمزة عمل subdomain لكل برنامج (CNAME إلى 7mz410.github.io). كل برنامج بنرفع نسخة الويب تبعه على فرع `gh-pages` بريبوه مع ملف CNAME.
-5. **sharek** (Penpot، Docker على VPS بـ Hetzner، `sharek.studio.creative.ps`). mzika وaswat صاروا من soundcraft (§ آخر الملف).
-6. **7rrek:** يُبنى فوق rsm (timeline، keyframes، onion skin، tweens، تصدير فيديو/GIF/Lottie).
-7. **MCP موحّد للسويت** (`shibshib mcp`) يعرف كل البرامج المفتوحة.
-8. **مرحلة الإضافات العربية:** الخطّاط في rsm (§4.5)، مقامات بربع تون في mzika، تحويل الكلام العربي لنص في aswat…
-9. لاحقاً: PR للترجمة العربية على upstream، تغيير الأسماء الداخلية (hard fork)، ربط the-247.com.
+1. **ثبّت الإصدار الأول:** حمزة يجرّب الـ dmg على الماك والمنصّة تثبّت برنامج فعلياً؛ صفحات بالموقع لمهندس وشارك وأصوات وألحان والمنصّة؛ HTTPS لمهندس؛ desktop category لأصوات وألحان (Audio)؛ امسح التجريبيات `v0.0.2-test`؛ جدّد توكن cPanel.
+2. **العربي الناقص:** RTL لوحات مهندس؛ رؤوس المسارات وformat! بأصوات وألحان؛ تأثيرات وكلمات وعروض (لسا بدون عربي)؛ RTL أرقام؛ جمع عربي بست صيغ وين ناقص؛ مراجعة حمزة للمصطلحات.
+3. **حرّك:** فحص الـ tween والـ timeline بالعربي على الشاشة؛ تصدير فيديو/Lottie؛ tween للدوران وتحويل الشكل.
+4. **MCP موحّد للسويت** يعرف كل البرامج المفتوحة.
+5. **شارك على السيرفر:** `figcraft-server` على Hetzner (`sharek.studio.creative.ps`)، وبعدها نرجّع Online sharing بسيرفرنا.
+6. **التوزيع:** ماك Intel (universal)؛ توقيع Apple Developer ID وWindows لما يصير في ميزانية؛ خلفية DMG إلنا؛ صور صفحة التفاصيل بالمنصّة.
+7. **الإضافات العربية:** الخطّاط برسم (§4.5)، مقامات بربع تون وإيقاعات شرقية بألحان (channel rack، patterns، الـ sampler جاهز من upstream)، تحويل الكلام العربي لنص بأصوات.
+8. **دمج upstream دوري** لكل البرامج (التقرير الأسبوعي كل أحد)، وانتبه: release.yml تبعنا اسمه studio-release.yml.
+9. لاحقاً: PR للترجمة العربية على upstream، الأسماء الداخلية (hard fork)، ربط the-247.com، artcraft بـ bring your own key.
 
 ## 6. أوامر متكررة
 
