@@ -258,3 +258,14 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 - **الأيقونات:** النجمة على بطاقة بيضا (إطار #e4e0d8) بكل البرامج، والقالب بـ `rsm/studio/fork/brand_files.py`. commits محلية بكل ريبو (رسم بس مرفوع).
 - **Releases (بدون توقيع):** `rsm/.github/workflows/build-release.yml` (reusable، inputs لكل برنامج) + caller على tags `v*`، و`release.yml` تبع upstream رجع. نجح v0.0.1-test (dmg aarch64، zip ويندوز x64، tar لينكس + SHA256SUMS)، وانمسح. **الجاي:** tag `v0.0.2-test` على رسم، والتأكد إنه الـ dmg فيه `rsm.app`، وجدول `rsm/studio/RELEASES.md` (الإيجنت انوقف قبل ما يخلص، افحص)، وبعدين الـ workflow لباقي البرامج. حمزة يجرّب الـ dmg على جهازه.
 - **سيرفر شارك:** حمزة بيحاول يزبّط Hetzner.
+
+## وين وصلنا (آخر تحديث 2026-10-13 مساءً)
+
+- **Releases شغّالة:** `v1.0.0` (رسمي، unsigned) لـ 15 برنامج + المنصّة: dmg ماك aarch64، zip ويندوز x64، tar لينكس + SHA256SUMS. workflow واحد reusable: `rsm/.github/workflows/build-release.yml` (inputs: app, package, version_var, bundle, fonts_ref…)، وكل برنامج إله `.github/workflows/studio-release.yml` على tags `v*` (فيها `-` = prerelease). `release.yml` تبع upstream بيشتغل على branch `release` بس. الجدول: `rsm/studio/RELEASES.md`. الأرقام: v1.0.0 أعلى من tags upstream (بلاش v0.x). غلطة 403 وقت Publish بتصير أحياناً: إعادة الـ tag بتحلّها.
+- **`v1.0.1`:** مهندس وشارك وأصوات (العربي)، و**ألحان v1.0.0** (fork جديد من soundcraft).
+- **الـ .app بأسماءنا** (`tlween.app`…) عبر قواعد `rebrand.py`. المنصّة: `Mansa.app`، asset stem `artcraft-launcher` (self-update)، DMG بدون خلفية (الخلفية كان فيها شعار ArtCraft).
+- **الموقع:** زر تنزيل كحلي بكل صفحة (`studio/dl.js` بيختار ملف نظام الزائر من آخر release)، وبطاقات تنزيل للمنصّة وشارك وأصوات وألحان ومهندس. الرفع: cPanel UAPI `Fileman/upload_files` (user `creative`، host `cpanel.creative.ps`، التوكن ما بينحفظ: حمزة يعطيه بالجلسة، ولازم ينمسح/يتجدد بعد ما انكتب بالمحادثة).
+- **مهندس على الويب:** muhandes.studio.creative.ps (HTTPS بيستنى شهادة GitHub).
+- **العربي:** مهندس (1230 جملة، RTL جزئي: اللوحات ما انقلبت)، شارك (كامل، RTL)، أصوات وألحان (نظام ترجمة جديد tl!، ~710 جملة، RTL للقوائم؛ رؤوس المسارات وformat! لسا إنجليزي). مهندس: UpgradeCode ويندوز جديد.
+- **إيجنتس:** haiku + /caveman + /ponytail. النظام بيرفض push/deploy من إيجنت: الرفع عندي بعد المراجعة.
+- **الجاي:** المنصّة: ألحان للكتالوج والأسماء العربية (إيجنت شغّال) ثم إصدار. RTL لوحات مهندس. MCP موحّد. سيرفر شارك (Hetzner). ماك Intel. صور صفحة التفاصيل بالمنصّة وصفحات للبرامج الجديدة بالموقع.
