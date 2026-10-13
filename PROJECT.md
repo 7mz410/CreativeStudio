@@ -248,3 +248,13 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 5. MCP موحّد.
 - بالتوازي: شارك (Hetzner، بيستنى التكلفة والـ IP)، العربي لكلمات وعروض وتأثيرات، RTL لأرقام، الوردمارك العربي (Lalezar)، Enforce HTTPS للجداد، نافذة إعدادات لمسات (أعرض بـ 10pt)، امسح الـ cPanel token لما نخلص DNS.
 - **دروس:** إيجنتس بالتوازي: 2 بالمرة أو `CARGO_BUILD_JOBS=4` (الذاكرة خلصت مع 4). ما ألمس ريبو فيه إيجنت شغّال. حتى لو إيجنت قال "فحصت"، براجع بنفسي (صفحة حرّك كانت بتوعد بميزات مش موجودة).
+
+## وين وصلنا (آخر تحديث 2026-10-13)
+
+- **storytold جديد:** figcraft (Figma) = **شارك** بدل Penpot (عنده figcraft-server وlive sessions). soundcraft 0.6.1 فيه sampler (مفيد لألحان). craft-fonts فيه Noto Sans Arabic. craft-launcher: drawer تفاصيل وقاعدة AGENTS.md (تنزيل من storytold بس).
+- **إيجنتس:** دايماً haiku، وبيبلّشوا بـ /caveman و/ponytail. لما يخلصوا براجع وبعمل commit مباشرة.
+- **حرّك:** زر Export GIF، قائمة Animation، motion tweens (نقل/تكبير/شفافية بين keyframes، طبقة "Tween" مؤقتة مقفولة)، دمج رسم (75 commit)، ترجمة الـ timeline لـ 14 لغة، `rebrand.py` صار idempotent بـ bundle.rs. commits محلية، **مش مرفوعة**. ما انشاف على الشاشة لسا. toolbar بالعربي بيعمل debug_assert (NaN) بنسخة debug بس، نفس الكود برسم.
+- **مهندس** (cadcraft) و**المنصّة** (craft-launcher) و**شارك** (figcraft): forks بـ commits محلية، **مش مرفوعة**. مهندس: عربي 84 جملة، UpgradeCode ويندوز لسا تبع CADCraft. شارك: السيرفر الافتراضي انشال (ما بيبعت لـ collab.craftapps.dev)، شعار About لسا تبعهم. المنصّة: كتالوج برامجنا الـ12، عربي 297 جملة بدون خط/RTL؛ قرارات معتمدة لسا ما انطبّقت: GitHub بدل api.storyteller.ai، bundle ids `ps.creative.studio.<app>`، "المنصّة" بالعربي، أصوات للكتالوج، أيقونات البرامج الجديدة.
+- **الأيقونات:** النجمة على بطاقة بيضا (إطار #e4e0d8) بكل البرامج، والقالب بـ `rsm/studio/fork/brand_files.py`. commits محلية بكل ريبو (رسم بس مرفوع).
+- **Releases (بدون توقيع):** `rsm/.github/workflows/build-release.yml` (reusable، inputs لكل برنامج) + caller على tags `v*`، و`release.yml` تبع upstream رجع. نجح v0.0.1-test (dmg aarch64، zip ويندوز x64، tar لينكس + SHA256SUMS)، وانمسح. **الجاي:** tag `v0.0.2-test` على رسم، والتأكد إنه الـ dmg فيه `rsm.app`، وجدول `rsm/studio/RELEASES.md` (الإيجنت انوقف قبل ما يخلص، افحص)، وبعدين الـ workflow لباقي البرامج. حمزة يجرّب الـ dmg على جهازه.
+- **سيرفر شارك:** حمزة بيحاول يزبّط Hetzner.
