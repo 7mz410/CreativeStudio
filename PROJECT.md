@@ -125,7 +125,7 @@
 3. **حرّك:** فحص الـ tween والـ timeline بالعربي على الشاشة؛ تصدير فيديو/Lottie؛ tween للدوران وتحويل الشكل.
 4. **MCP موحّد للسويت** يعرف كل البرامج المفتوحة.
 5. **شارك على السيرفر:** `figcraft-server` على Hetzner (`sharek.studio.creative.ps`)، وبعدها نرجّع Online sharing بسيرفرنا.
-6. **التوزيع:** ماك Intel (universal)؛ توقيع Apple Developer ID وWindows (ميزانية آمنة **500$ بالسنة** مع السيرفر: Apple 99$، Certum Open Source ~70–100$ أو OV ~200–400$، Hetzner ~80–100$؛ قرار: اسم حمزة ولا شركة؛ لما نوقّع نرجّع `Expect::release` بالمنصّة يطلب team)؛ خلفية DMG إلنا؛ صور صفحة التفاصيل بالمنصّة.
+6. **التوزيع:** ماك Intel (universal)؛ توقيع Apple Developer ID وWindows (ميزانية آمنة **500$ بالسنة** مع السيرفر: Apple 99$، Certum Open Source ~70–100$ أو OV ~200–400$، Hetzner ~80–100$؛ **قرار حمزة 2026-10-13: باسم شركة** (يعني D-U-N-S لآبل)؛ المنصّة "قريباً" بالموقع لحد ما نوقّع، وباقي البرامج تنزيل عادي؛ لما نوقّع نرجّع `Expect::release` بالمنصّة يطلب team)؛ خلفية DMG إلنا؛ صور صفحة التفاصيل بالمنصّة.
 7. **الإضافات العربية:** الخطّاط برسم (§4.5)، مقامات بربع تون وإيقاعات شرقية بألحان (channel rack، patterns، الـ sampler جاهز من upstream)، تحويل الكلام العربي لنص بأصوات.
 8. **دمج upstream دوري** لكل البرامج (التقرير الأسبوعي كل أحد)، وانتبه: release.yml تبعنا اسمه studio-release.yml.
 9. لاحقاً: PR للترجمة العربية على upstream، الأسماء الداخلية (hard fork)، ربط the-247.com، artcraft بـ bring your own key.
