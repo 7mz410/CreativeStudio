@@ -259,3 +259,5 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 - **العربي:** مهندس (1230 جملة، RTL جزئي: اللوحات ما انقلبت)، شارك (كامل، RTL)، أصوات وألحان (نظام ترجمة جديد tl!، ~710 جملة، RTL للقوائم؛ رؤوس المسارات وformat! لسا إنجليزي). مهندس: UpgradeCode ويندوز جديد.
 - **إيجنتس:** haiku + /caveman + /ponytail. النظام بيرفض push/deploy من إيجنت: الرفع عندي بعد المراجعة.
 - **الجاي:** المنصّة: ألحان للكتالوج والأسماء العربية (إيجنت شغّال) ثم إصدار. RTL لوحات مهندس. MCP موحّد. سيرفر شارك (Hetzner). ماك Intel. صور صفحة التفاصيل بالمنصّة وصفحات للبرامج الجديدة بالموقع.
+
+- 2026-10-17: **MCP لكلود:** تلوين: `~/.local/bin/tlween-cli` (مبني محلياً) مسجّل بـ `~/.claude.json` باسم `tlween` (جذر `~/Documents`). تأثيرات: **Claude Desktop extension** `effectat-1.0.1-<os>-<arch>.mcpb` بالـ release (ماك aarch64 وويندوز x64)، دبل كليك وبيختار فولدر شغل؛ انجرّب headless: بوستر انعمل fade وzoom وطلع MP4. الـ workflow: input `mcpb_cli` بـ `build-release.yml` وmanifest بـ `<app>/studio/mcpb/manifest.json`. لسا: تجربة التثبيت بـ Claude Desktop على جهاز تاني (الـ CLI مش موقّع)، ونفس الشي لتلوين وحرّك لما بدنا.
