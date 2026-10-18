@@ -261,3 +261,11 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 - **الجاي:** المنصّة: ألحان للكتالوج والأسماء العربية (إيجنت شغّال) ثم إصدار. RTL لوحات مهندس. MCP موحّد. سيرفر شارك (Hetzner). ماك Intel. صور صفحة التفاصيل بالمنصّة وصفحات للبرامج الجديدة بالموقع.
 
 - 2026-10-17: **MCP لكلود:** تلوين: `~/.local/bin/tlween-cli` (مبني محلياً) مسجّل بـ `~/.claude.json` باسم `tlween` (جذر `~/Documents`). تأثيرات: **Claude Desktop extension** `effectat-1.0.1-<os>-<arch>.mcpb` بالـ release (ماك aarch64 وويندوز x64)، دبل كليك وبيختار فولدر شغل؛ انجرّب headless: بوستر انعمل fade وzoom وطلع MP4. الـ workflow: input `mcpb_cli` بـ `build-release.yml` وmanifest بـ `<app>/studio/mcpb/manifest.json`. لسا: تجربة التثبيت بـ Claude Desktop على جهاز تاني (الـ CLI مش موقّع)، ونفس الشي لتلوين وحرّك لما بدنا.
+
+- 2026-10-18: **دمج upstream (branch `sync-20261018` بكل برنامج، لسا مش على main ولا pushed).**
+  - خلص وانعمله commit: tlween 816 (`1356c15a`)، effectat 476 (`7986f91c`، كل الاختبارات خضرا)، sf7aat 348 (`949db92f`)، 7rrek 1670 (`ccc0e7b5`)، klmat 444 (`d633068`)، rsm 1664 (`8447700e`، الإيجنت انوقف وهو بيقارن الاختبارات مع upstream، فلسا بدها تشغيل اختبارات).
+  - فاشل وناطر: ترجمات عربي جديدة (tlween 162، 7rrek، klmat 4 نصوص rebrand)، اختبارات بتتوقع الاسم القديم (tlween 2)، tlween profile_open/shortcut_set/mac_menu_appkit ما انقارنوا مع upstream، klmat `legacy_font_effects_are_drawn`، 7rrek `tests_picks` (2).
+  - قرار لحمزة: sf7aat `APP_ID` لسا `ai.storyteller.pdfcraft` والـ bundle id `ps.creative.studio.sf7aat` (اختبار `macos_bundle_id_matches_app_id`).
+  - نص شغل (merge بدون commit على `sync-20261018`): arqam و3urood. يا بنكمّل الحل، يا `git merge --abort`.
+  - لسا ما بلّشنا: lamasat 975، tsweer 259، trteeb 2100، aswat 386، al7an 12، muhandes 120 (فيه ملف معدّل)، sharek 898 (فيه ملف معدّل)، mansa 23.
+  - الديسك: 3 إيجنتس مع بعض بالكتير، و`cargo clean` بعد كل برنامج (وصلنا 6G مرة).
