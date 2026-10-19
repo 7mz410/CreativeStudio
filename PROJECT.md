@@ -279,3 +279,6 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
     - أيقونات الملفات: tlween وtsweer (موجودين بـ `file icons/` بس مش مربوطين)، 3urood (ما في svg)، al7an (مأخوذة من mzika.svg بلون نعناعي، بدها تصميم).
     - tlween: `cargo fmt` + اختبارات لسا بتتوقع PhotoCraft. tsweer: "Selection as FilmCraft Project…". effectat: الويب لسا `.ecproj`، و`.ecprojx` ما تغيّر. 3urood: ربط ويندوز/لينكس، و`replacefonts` بيفشل مع craft-fonts المحلي (حدّثه).
     - الديسك امتلى مرة (3 بنايات مع بعض): 2 إيجنتس بالكتير، `-j 2`، وفحص `df` قبل كل بناء.
+  - **آخر 3 (2026-10-19):** muhandes (205، على main) وsharek (920 + `.sharek`، على main) انرفعوا. **mansa ما اندمجت:** `sync-20261019` (`643b30b`) فيها 20 اختبار UI فاشل لأنه upstream غيّر تصميم الواجهة والدمج خليط؛ `studio-mansa` ما انلمس. بدها قرار: نلحق تصميم upstream ولا لأ. SUITE فيها 14 برنامج بدون sharek (سؤال لحمزة)، و19 سطر عربي جديد بدهم مراجعة.
+  - عربي ناقص كمان: muhandes 21 كلمة، sharek 182 (أغلبها رسائل استيراد .fig)، tsweer 64.
+  - sharek: روابط ويندوز (ARPURLINFOABOUT/ARPHELPLINK) لسا ArtCraft؛ اختبارين file_access بيفشلوا على الماك (/var مقابل /private/var) ونفس الكود عند upstream.
