@@ -269,3 +269,13 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - نص شغل (merge بدون commit على `sync-20261018`): arqam و3urood. يا بنكمّل الحل، يا `git merge --abort`.
   - لسا ما بلّشنا: lamasat 975، tsweer 259، trteeb 2100، aswat 386، al7an 12، muhandes 120 (فيه ملف معدّل)، sharek 898 (فيه ملف معدّل)، mansa 23.
   - الديسك: 3 إيجنتس مع بعض بالكتير، و`cargo clean` بعد كل برنامج (وصلنا 6G مرة).
+
+- 2026-10-19: **دمج upstream كمل لكل البرامج + كل برنامج بيحفظ بامتداده.** branches: `sync-20261018` (rsm، 7rrek، tlween، effectat، sf7aat، klmat، arqam، 3urood) و`sync-20261019` (lamasat، tsweer، trteeb، aswat، al7an، muhandes، sharek، mansa). كلهم fast-forward فوق main.
+  - **الامتدادات (قرار حمزة):** كل برنامج بيحفظ `.<اسمه>` وبيفتح امتداد upstream القديم، والقاعدة جوّا `studio/rebrand.py` (حرّك: `studio/anim_brand.py`). حرّك صار `.7rrek` (بيفتح `.rsm`). كلمات/أرقام/مهندس بيضلّوا docx/xlsx/dxf، صفحات pdf، لمسات ما إله ملف (شلنا إعلان `.pcraft`). autosave/recovery أساميهم ما تغيّرت. sf7aat `APP_ID` = `ps.creative.studio.sf7aat`.
+  - **ترجمة Gemini:** `ar-gemini/` (ملفات مترجمة + PROMPT.md + glossary.tsv). اندمجت: rsm (ar-work دفعة 19)، tlween (21)، sf7aat، arqam، aswat (4 أزرار)، al7an (2).
+  - **مؤجّل:**
+    - جولة دمج صغيرة للي اندمجوا 10-18 (upstream زاد 110–200 commit) + rsm ما انشغّلت اختباراته كاملة بعد الدمج.
+    - العربي لكلمات (`ar-gemini/klmat-*.tsv`، لازم `ar.tsv` + سطر بـ LANGUAGES) وتأثيرات (`effectat-*.tsv`، جداول ARABIC بـ ui.rs/effects.rs) ولمسات (`lamasat.tsv`، و`assemble.py` لازم ينصلح عشان ما يمسح الـ fallbacks). حرّك: `7rrek-only.tsv` + نفس دفعة rsm. tsweer: 64 جملة ناقصة. aswat: نصوص upstream الجديدة مش ملفوفة بـ `tl!`.
+    - أيقونات الملفات: tlween وtsweer (موجودين بـ `file icons/` بس مش مربوطين)، 3urood (ما في svg)، al7an (مأخوذة من mzika.svg بلون نعناعي، بدها تصميم).
+    - tlween: `cargo fmt` + اختبارات لسا بتتوقع PhotoCraft. tsweer: "Selection as FilmCraft Project…". effectat: الويب لسا `.ecproj`، و`.ecprojx` ما تغيّر. 3urood: ربط ويندوز/لينكس، و`replacefonts` بيفشل مع craft-fonts المحلي (حدّثه).
+    - الديسك امتلى مرة (3 بنايات مع بعض): 2 إيجنتس بالكتير، `-j 2`، وفحص `df` قبل كل بناء.
