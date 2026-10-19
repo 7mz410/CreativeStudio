@@ -282,3 +282,7 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - **آخر 3 (2026-10-19):** muhandes (205، على main) وsharek (920 + `.sharek`، على main) انرفعوا. **mansa ما اندمجت:** `sync-20261019` (`643b30b`) فيها 20 اختبار UI فاشل لأنه upstream غيّر تصميم الواجهة والدمج خليط؛ `studio-mansa` ما انلمس. بدها قرار: نلحق تصميم upstream ولا لأ. SUITE فيها 14 برنامج بدون sharek (سؤال لحمزة)، و19 سطر عربي جديد بدهم مراجعة.
   - عربي ناقص كمان: muhandes 21 كلمة، sharek 182 (أغلبها رسائل استيراد .fig)، tsweer 64.
   - sharek: روابط ويندوز (ARPURLINFOABOUT/ARPHELPLINK) لسا ArtCraft؛ اختبارين file_access بيفشلوا على الماك (/var مقابل /private/var) ونفس الكود عند upstream.
+- 2026-10-19 (آخر النهار): **كله على main ومرفوع** ما عدا: mansa (`sync-20261019`، 20 اختبار UI)، وklmat العربي (branch `klmat-arabic`: ar.tsv من Gemini + bidi؛ اختبار `every_tab_and_command_is_translated` بيقول "Add Font…" و"Load System Installed Fonts…" مش مترجمين مع إنهم موجودين بالـ ar.tsv، لسا ما عرفنا ليش).
+  - انرفع اليوم كمان: جولة دمج ثانية (rsm، 7rrek، tlween، effectat، sf7aat، klmat)، عربي 7rrek كامل (حرّك)، عربي effectat (1006 + bidi، الواجهة لسا LTR؛ البحث بالعربي بأسماء التأثيرات ما بيطابق لأنه النص مخزّن visual)، عربي lamasat (+ assemble.py بيعبّي الناقص بالإنجليزي)، أيقونات ملفات tlween وtsweer.
+  - **Gemini بيغلط:** ترجم "MIT" (الرخصة) لـ "معهد ماساتشوستس للتكنولوجيا". لازم مراجعة بشرية لكلمات وتأثيرات خصوصاً. صيغ الجمع لازم كل وحدة فيها `{n}` (اختبار bundled_catalogs).
+  - ناقص: أيقونات ملف لعروض وألحان (تصميم)، klmat/effectat ما فيهم قلب الواجهة RTL.
