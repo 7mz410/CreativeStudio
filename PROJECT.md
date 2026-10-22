@@ -286,3 +286,11 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - انرفع اليوم كمان: جولة دمج ثانية (rsm، 7rrek، tlween، effectat، sf7aat، klmat)، عربي 7rrek كامل (حرّك)، عربي effectat (1006 + bidi، الواجهة لسا LTR؛ البحث بالعربي بأسماء التأثيرات ما بيطابق لأنه النص مخزّن visual)، عربي lamasat (+ assemble.py بيعبّي الناقص بالإنجليزي)، أيقونات ملفات tlween وtsweer.
   - **Gemini بيغلط:** ترجم "MIT" (الرخصة) لـ "معهد ماساتشوستس للتكنولوجيا". لازم مراجعة بشرية لكلمات وتأثيرات خصوصاً. صيغ الجمع لازم كل وحدة فيها `{n}` (اختبار bundled_catalogs).
   - ناقص: أيقونات ملف لعروض وألحان (تصميم)، klmat/effectat ما فيهم قلب الواجهة RTL.
+- 2026-10-22 (ليلة كاملة، إيجنتس "سعاد 01–17"): **دمج upstream لـ 15 برنامج، كله على main ومرفوع** ما عدا mansa (ما انلمست، قرار التصميم لحمزة؛ upstream زاد 58 commit فوق `sync-20261019`).
+  - branches: `sync-20261021` (aswat، al7an، 3urood، effectat، muhandes، trteeb، klmat) و`sync-20261022` (sf7aat، tsweer، arqam، lamasat، sharek، tlween، rsm، 7rrek).
+  - **SonarCloud:** upstream ضاف `sonarcloud.yml` + `sonar-project.properties` (بيحتاجوا SONAR_TOKEN تبع storytold). انشالوا من كل برنامج بـ commit لحاله؛ بالدمج الجاي ممكن يرجعوا إذا upstream عدّلهم.
+  - **عربي جديد:** tlween 47، rsm 137 (فلاتر Fresco/Watercolor… + undo + قوائم)، 7rrek نفس دفعة rsm، sharek 17. lamasat: 137 نص جديد بالإنجليزي لسا (بدهم دفعة `ar-gemini/lamasat.tsv` + assemble.py).
+  - **rebrand.py انصلح:** arqam (العربي مش آخر لغة بعد ما upstream ضاف الصربي)، sharek (المقارنة بدون مسافات وفواصل عشان rustfmt).
+  - **اختبارات انصلحت:** trteeb 13 (بيستنّوا `.designcraft`، صاروا `.trteeb` + واحد بيفتح القديم)، klmat (نصوص About بالـ audit صارت language-neutral).
+  - **فشل قديم (مش من الدمج):** 3urood `control_server` (متقلب عند upstream كمان) و`replacefonts`؛ lamasat `a_static_face_has_no_strong_twin` (Plex Arabic)؛ sharek «الشدة» بتنقص؛ tlween 7 (PhotoCraft بـ mac_menu، web-boot title، profile_open 3، shortcut_set، chrome_ui)؛ rsm/7rrek: `el` ناقص (upstream)، 7rrek `MENU_KEEP_AS_IS` فيه "rsm" والعربي داخل بفحص مش إله.
+  - **الديسك:** 3 بنايات مع بعض بـ `-j 4` مشي تمام إذا `target/` بينمسح بعد كل برنامج.
