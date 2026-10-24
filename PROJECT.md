@@ -294,3 +294,9 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - **اختبارات انصلحت:** trteeb 13 (بيستنّوا `.designcraft`، صاروا `.trteeb` + واحد بيفتح القديم)، klmat (نصوص About بالـ audit صارت language-neutral).
   - **فشل قديم (مش من الدمج):** 3urood `control_server` (متقلب عند upstream كمان) و`replacefonts`؛ lamasat `a_static_face_has_no_strong_twin` (Plex Arabic)؛ sharek «الشدة» بتنقص؛ tlween 7 (PhotoCraft بـ mac_menu، web-boot title، profile_open 3، shortcut_set، chrome_ui)؛ rsm/7rrek: `el` ناقص (upstream)، 7rrek `MENU_KEEP_AS_IS` فيه "rsm" والعربي داخل بفحص مش إله.
   - **الديسك:** 3 بنايات مع بعض بـ `-j 4` مشي تمام إذا `target/` بينمسح بعد كل برنامج.
+- 2026-10-24 (إيجنتس "سعاد 18–20"، 3 مع بعض بـ `-j 4`، caffeinate): **دمج upstream لـ 14 برنامج، على main ومرفوع.** branch `sync-20261024` بكل ريبو.
+  - **tlween ما انرفع:** `sync-20261024` (`a984807f3`، 1665 commit)، 10 فاشلين: 4 قدام + 6 جداد (updates user-agent، print_cmds nul، discard/file_dialog save-asks، camera_raw scope NaN، camera_raw_localization ar). crate الـ plugins ما بينبني على الماك (abi.rs mknodat، upstream).
+  - **klmat:** upstream شال ملفات الترجمة من الريبو وصار يستعمل crate `craft-i18n` برّا. `klmat-arabic` ما عاد بيركب؛ العربي لازم يروح لـ craft-i18n (أو overlay عنا). ممكن باقي البرامج يلحقوا.
+  - عربي ناقص: lamasat 436 (fallback إنجليزي)، sharek 46، rsm/7rrek جملتين جداد + ~360 بحرّك (تقدير)، sf7aat 11، arqam ~699 (تقدير خشن، بده تأكيد).
+  - فشل جديد مش من الأسماء: sf7aat `macos_association` (fixture upstream مسجّل على PdfCraft)، tsweer 3 فيديو (h264/mkv/hevc، مش متأكدين إذا قدام).
+  - انصلح: خطأ بناء upstream بـ au-host على الماك (aswat، al7an: `use super::registry`).
