@@ -304,3 +304,6 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - klmat main: `ar` بـ LANGUAGES + `i18n/bidi.rs` (الترتيب visual وقت الـ lookup، cached). `studio-release.yml` بيبعت `i18n_repo: 7mz410/craft-i18n` و`i18n_ref` (نفس `studio/craft-i18n.rev`)؛ **بدون هيك الـ release بيطلع إنجليزي بكل اللغات.**
   - rsm `build-release.yml`: inputs اختيارية `i18n_repo`/`i18n_ref` (فاضيين = ولا إشي بيتغيّر). أي برنامج بينقل لـ craft-i18n لازم يبعتهم + ملف `locales/ar/<app>.tsv` بالـ fork.
   - **بكل حفلة update:** حدّث الـ fork من upstream (`arabic-wordcraft` فوق main) وحرّك الـ SHA بالـ workflow و`.rev`. fork main لسا ما فيه العربي (3 commits upstream أحدث).
+- 2026-10-24 (آخر الليل): دفعة Gemini `ar-gemini/20261024b`: arqam 699، muhandes 113، tsweer 36 (على main ومرفوعين)، tlween 271 (على `sync-20261024` بس، `d7f95efdb`). مراجعة Gemini لـ `wordcraft.tsv`: 498 تصليح (كان في "All caps" = "جميع القبعات") → fork `arabic-wordcraft` `e0d4a0c8`، klmat بيأشّر عليه (`a46286f2`).
+  - tlween: `assemble.py` بيمسح أي سطر انكتب على ar.tsv مباشرة؛ الـ 47 تبع 10-22 صاروا ar-work batch 23. **دايماً حط العربي بـ ar-work.**
+  - muhandes: upstream نقل `mcp_connect.rs` لـ `tests/it/`؛ انضاف لـ SKIP_FILES بـ rebrand.py.
