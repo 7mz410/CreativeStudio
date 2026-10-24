@@ -300,3 +300,7 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - عربي ناقص: lamasat 436 (fallback إنجليزي)، sharek 46، rsm/7rrek جملتين جداد + ~360 بحرّك (تقدير)، sf7aat 11، arqam ~699 (تقدير خشن، بده تأكيد).
   - فشل جديد مش من الأسماء: sf7aat `macos_association` (fixture upstream مسجّل على PdfCraft)، tsweer 3 فيديو (h264/mkv/hevc، مش متأكدين إذا قدام).
   - انصلح: خطأ بناء upstream بـ au-host على الماك (aswat، al7an: `use super::registry`).
+- 2026-10-24 (بالليل): **العربي بكلمات صار عبر craft-i18n.** upstream نقل كل الترجمات لـ `storytold/craft-i18n` (build.rs بيقرأ `CRAFT_I18N_DIR`). عملنا fork: `7mz410/craft-i18n` (نسخة محلية `CreativeStudio/craft-i18n`، remote `upstream` = storytold)، branch `arabic-wordcraft` (`ee899b1f`) فيه `locales/ar/wordcraft.tsv` (2372 سطر Gemini، بده مراجعة، وبعدين PR لـ upstream).
+  - klmat main: `ar` بـ LANGUAGES + `i18n/bidi.rs` (الترتيب visual وقت الـ lookup، cached). `studio-release.yml` بيبعت `i18n_repo: 7mz410/craft-i18n` و`i18n_ref` (نفس `studio/craft-i18n.rev`)؛ **بدون هيك الـ release بيطلع إنجليزي بكل اللغات.**
+  - rsm `build-release.yml`: inputs اختيارية `i18n_repo`/`i18n_ref` (فاضيين = ولا إشي بيتغيّر). أي برنامج بينقل لـ craft-i18n لازم يبعتهم + ملف `locales/ar/<app>.tsv` بالـ fork.
+  - **بكل حفلة update:** حدّث الـ fork من upstream (`arabic-wordcraft` فوق main) وحرّك الـ SHA بالـ workflow و`.rev`. fork main لسا ما فيه العربي (3 commits upstream أحدث).
