@@ -321,3 +321,4 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
 - 2026-10-25 (تاني): **حرّك المرحلة 1 كاملة (A1–A6) على `anim-a456`** (فوق a3، آخر commit `079855fd`، مش مرفوع). سنافر 004–009 بنوا قطع بملفات منفصلة، وأنا الأساس والتجميع.
   - A4 shape morph (اختبارات `tests/anim_morph.rs`)، A5 كاميرا (`anim.cameraKey/RemoveKey/Info`، بتنطبّق بالتصدير)، A6 صوت (crate `audio` بـ symphonia؛ `anim.soundImport/Set/Remove/Info`؛ Opus/AAC بالفيديو)، صفوف كاميرا وصوت بالـ timeline (`timeline_av.rs`)، أزرار Camera Key وImport Sound…، الـ timeline RTL بالعربي.
   - ناقص: صوت أثناء التشغيل بالبرنامج، الصوت مسار مش مضمّن بالملف، الويب ما انجرّب للصوت. الخطة: `plans/7rrek-backlog.md`.
+- 2026-10-25 (تالت): **حرّك المرحلة 2 بلّشت.** خطة `plans/7rrek-phase2.md` (R1–R7)، و`plans/7rrek-handoff.md` لنكمّل منه. R1 العظام على `rig-r1` (مرفوع، بدون PR): skinning للمسارات، أوامر `rig.*`، رسم العظام عالكانفس. PR #5 فيه المرحلة 1 + الصوت المضمّن وتشغيله. ناقص R1: أداة Bone بالكانفس.
