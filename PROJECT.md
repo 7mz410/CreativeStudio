@@ -318,3 +318,6 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - A3: `anim.tween {ease: linear|easeIn|easeOut|easeInOut|[x1,y1,x2,y2]}`، بينحفظ بـ `eases`، قائمة Easing بالـ timeline + عربي.
   - CI أخضر إلا الفشل القديم `shared_param_check_errors_show_their_values_as_given` (عربي shape.rectangle، فاشل بدون تغييراتنا).
   - ملاحظات: شريط الـ timeline بيفيض على 1000px؛ شبكة الـ frames لسا LTR بالعربي. هدف حمزة: مستوى Toon Boom Harmony أو أقوى.
+- 2026-10-25 (تاني): **حرّك المرحلة 1 كاملة (A1–A6) على `anim-a456`** (فوق a3، آخر commit `079855fd`، مش مرفوع). سنافر 004–009 بنوا قطع بملفات منفصلة، وأنا الأساس والتجميع.
+  - A4 shape morph (اختبارات `tests/anim_morph.rs`)، A5 كاميرا (`anim.cameraKey/RemoveKey/Info`، بتنطبّق بالتصدير)، A6 صوت (crate `audio` بـ symphonia؛ `anim.soundImport/Set/Remove/Info`؛ Opus/AAC بالفيديو)، صفوف كاميرا وصوت بالـ timeline (`timeline_av.rs`)، أزرار Camera Key وImport Sound…، الـ timeline RTL بالعربي.
+  - ناقص: صوت أثناء التشغيل بالبرنامج، الصوت مسار مش مضمّن بالملف، الويب ما انجرّب للصوت. الخطة: `plans/7rrek-backlog.md`.
