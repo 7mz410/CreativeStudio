@@ -322,3 +322,7 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - A4 shape morph (اختبارات `tests/anim_morph.rs`)، A5 كاميرا (`anim.cameraKey/RemoveKey/Info`، بتنطبّق بالتصدير)، A6 صوت (crate `audio` بـ symphonia؛ `anim.soundImport/Set/Remove/Info`؛ Opus/AAC بالفيديو)، صفوف كاميرا وصوت بالـ timeline (`timeline_av.rs`)، أزرار Camera Key وImport Sound…، الـ timeline RTL بالعربي.
   - ناقص: صوت أثناء التشغيل بالبرنامج، الصوت مسار مش مضمّن بالملف، الويب ما انجرّب للصوت. الخطة: `plans/7rrek-backlog.md`.
 - 2026-10-25 (تالت): **حرّك المرحلة 2 بلّشت.** خطة `plans/7rrek-phase2.md` (R1–R7)، و`plans/7rrek-handoff.md` لنكمّل منه. R1 العظام على `rig-r1` (مرفوع، بدون PR): skinning للمسارات، أوامر `rig.*`، رسم العظام عالكانفس. PR #5 فيه المرحلة 1 + الصوت المضمّن وتشغيله. ناقص R1: أداة Bone بالكانفس.
+- 2026-10-25 (رابع): **حرّك المرحلة 2: R1 العظام، R2 الـ pegs، R3 الـ IK خلصوا** على `rig-r1` (مرفوع، بدون PR، آخر commit `08b20fd9`). سنافر 014–018.
+  - أداة Bone بالكانفس (كبسة = مفصل، سحب = pose عالـ frame، Cmd+سحب = IK)، صف Bones وصفوف pegs بالـ timeline، أوامر `peg.*` و`rig.reach` (two-bone + FABRIK)، عربي.
+  - انصلح: العظام كانت بتنطبّق عالرسم نفسه كل ما يتغيّر الـ frame (بتلوي مرتين). هلق بترسم نسخة مقفولة والأصل بيتخبّى. وارتفاع الـ timeline صار يحسب صفوف الكاميرا/الصوت/العظام.
+  - ناقص: أزرار وأداة للـ pegs بالواجهة، R4–R7. التفاصيل بـ `plans/7rrek-handoff.md`.
