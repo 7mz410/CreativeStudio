@@ -326,3 +326,4 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - أداة Bone بالكانفس (كبسة = مفصل، سحب = pose عالـ frame، Cmd+سحب = IK)، صف Bones وصفوف pegs بالـ timeline، أوامر `peg.*` و`rig.reach` (two-bone + FABRIK)، عربي.
   - انصلح: العظام كانت بتنطبّق عالرسم نفسه كل ما يتغيّر الـ frame (بتلوي مرتين). هلق بترسم نسخة مقفولة والأصل بيتخبّى. وارتفاع الـ timeline صار يحسب صفوف الكاميرا/الصوت/العظام.
   - ناقص: أزرار وأداة للـ pegs بالواجهة، R4–R7. التفاصيل بـ `plans/7rrek-handoff.md`.
+- 2026-10-26: upstream زاد 60–550 commit لكل برنامج. **craft-i18n upstream صار فيه `locales/ar/wordcraft.tsv` رسمي** (بيتعارض مع ملفنا بـ `arabic-wordcraft`): بالدمج الجاي قرّر ناخد ملفهم ونبعتلهم تصليحات المراجعة PR، أو نحط ملفنا فوقه. لسا ما في برنامج تاني نقل لـ craft-i18n (بس klmat، muhandes، sf7aat عندهم ملفات ar هناك). خطة حرّك ومهمة "VectorCraft" باسم سيرفر MCP بـ `plans/7rrek-animation.md`.
