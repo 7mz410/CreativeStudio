@@ -327,3 +327,14 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - انصلح: العظام كانت بتنطبّق عالرسم نفسه كل ما يتغيّر الـ frame (بتلوي مرتين). هلق بترسم نسخة مقفولة والأصل بيتخبّى. وارتفاع الـ timeline صار يحسب صفوف الكاميرا/الصوت/العظام.
   - ناقص: أزرار وأداة للـ pegs بالواجهة، R4–R7. التفاصيل بـ `plans/7rrek-handoff.md`.
 - 2026-10-26: upstream زاد 60–550 commit لكل برنامج. **craft-i18n upstream صار فيه `locales/ar/wordcraft.tsv` رسمي** (بيتعارض مع ملفنا بـ `arabic-wordcraft`): بالدمج الجاي قرّر ناخد ملفهم ونبعتلهم تصليحات المراجعة PR، أو نحط ملفنا فوقه. لسا ما في برنامج تاني نقل لـ craft-i18n (بس klmat، muhandes، sf7aat عندهم ملفات ar هناك). خطة حرّك ومهمة "VectorCraft" باسم سيرفر MCP بـ `plans/7rrek-animation.md`.
+- 2026-10-26 (حفلة update، سنافر 019–022): **دمج upstream على `sync-20261026` بكل ريبو، مش على main ولا مرفوع** (ناطر موافقة حمزة).
+  - **egui 0.37:** upstream نقل لـ fork egui 0.37 (git). نقلنا RTL تبعنا لـ vendor/egui 0.37 (نسخة rsm) بـ tsweer، lamasat، rsm، sharek، muhandes، aswat، al7an. `[patch.crates-io]` واحد + جدول `[patch."https://github.com/storytold/egui.git"]` لما الـ fork crates بدها تنحل لإلنا. tlween: قاعدة Cargo.toml بـ rebrand.py انشالت (كانت بتزيد الجدول كل مرة).
+  - **حرّك:** مش بهالحفلة. upstream بدّل الـ dock بـ `panel_docking` وبيتعارض مع الـ timeline؛ حمزة بيبنيه بسشن تانية.
+  - **craft-i18n:** أخدنا ملف upstream `ar/wordcraft.tsv` (2537 سطر). klmat بيأشّر على `493044f` (`fbdc7f88`)؛ **لازم push لـ main الـ fork (`7mz410/craft-i18n`) قبل أي release.** 17 تصليح للـ PR على branch `ar-wordcraft-review` (`8af4fea`) بـ worktree `craft-i18n-sync`، مش مرفوع؛ القائمة `ar-gemini/20261026/wordcraft-pr-candidates.tsv` (ترويسة بدل الرأس).
+  - **ناقص/فشل:**
+    - aswat/al7an: الدمج شال لف `tl!` عن ~14 ملف (الواجهة بتطلع إنجليزي). شغل نصّه بـ aswat branch `wip-tl-rewrap` (`c2d1c48`، مش مفحوص). al7an ما بلّش.
+    - tlween: من الـ 6 انصلح 2 (user-agent، camera_raw NaN)؛ لسا print_cmds nul، discard/file_dialog، camera_raw_localization. ~25 جديد "No glyph" (خطوط CJK/عربي ناقصة) + غيرهم ما انفرزوا.
+    - "No glyph" (⌥ ⇧ ▸ इ عربي) بـ 3urood، tsweer، lamasat، klmat، tlween: نفحص إذا من خطوط البيئة ولا من نقل egui 0.37.
+    - sf7aat: الاختبارات ما اشتغلت (craft-libs `edc41f68` مكسور عند upstream). klmat: bidi isolates بأسماء الرسوم البيانية (غالباً عنا). trteeb: `.trteeb` بـ `opens_as_document` انصلح يدوي، لازم يصير قاعدة rebrand. effectat: 2 socket timing (upstream غالباً).
+  - **Gemini:** `ar-gemini/20261026/ALL-gemini.tsv` (942 سطر، 4 أعمدة app/key/english/arabic، + PROMPT.md وglossary). ما فيه: tlween، trteeb (~178)، klmat (~200 بـ craft-i18n)، 3urood (ما انعدّ).
+  - الديسك: `7rrek/target` تبع سشن الأنيميشن وصل 71G ونزّلنا لـ 8.6G مرة؛ وقفنا البنايات.
