@@ -342,3 +342,4 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
   - "No glyph" (▸ إلخ) بيفشل عند upstream كمان (الخطوط المركّبة ما فيها الرمز)، مش من نقل egui تبعنا.
   - لسا مش على main: tlween (فشل كتير)، sf7aat (craft-libs upstream مكسور)، 7rrek (سشن الأنيميشن).
   - settings: `Bash(git -C * push origin main)` مسموح.
+  - PR مفتوح (craft-i18n): https://github.com/storytold/craft-i18n/pull/55 (17 تصليح عربي لـ wordcraft، branch `ar-wordcraft-review`).
