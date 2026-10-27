@@ -338,3 +338,7 @@ python3 shibshib/ar-work/assemble.py                    # بناء ar.tsv
     - sf7aat: الاختبارات ما اشتغلت (craft-libs `edc41f68` مكسور عند upstream). klmat: bidi isolates بأسماء الرسوم البيانية (غالباً عنا). trteeb: `.trteeb` بـ `opens_as_document` انصلح يدوي، لازم يصير قاعدة rebrand. effectat: 2 socket timing (upstream غالباً).
   - **Gemini:** `ar-gemini/20261026/ALL-gemini.tsv` (942 سطر، 4 أعمدة app/key/english/arabic، + PROMPT.md وglossary). ما فيه: tlween، trteeb (~178)، klmat (~200 بـ craft-i18n)، 3urood (ما انعدّ).
   - الديسك: `7rrek/target` تبع سشن الأنيميشن وصل 71G ونزّلنا لـ 8.6G مرة؛ وقفنا البنايات.
+- 2026-10-27: **انرفعوا على main:** effectat، arqam، 3urood، trteeb، klmat، tsweer، lamasat، rsm، sharek، muhandes، aswat، al7an (12)، + fork craft-i18n main = `493044f`. aswat/al7an: `tl!` رجع (234/290)؛ ضايل اختبارين i18n لحد ما ييجي عربي "Check for Updates…" و"Record (F12 or Cmd+Space)" من Gemini.
+  - "No glyph" (▸ إلخ) بيفشل عند upstream كمان (الخطوط المركّبة ما فيها الرمز)، مش من نقل egui تبعنا.
+  - لسا مش على main: tlween (فشل كتير)، sf7aat (craft-libs upstream مكسور)، 7rrek (سشن الأنيميشن).
+  - settings: `Bash(git -C * push origin main)` مسموح.
